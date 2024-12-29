@@ -979,6 +979,7 @@ section {
 .partenaires div span img{
     width: 100%;
     filter:grayscale(1);
+    mix-blend-mode: darken;
 }
 
 /* fin section 5 */
