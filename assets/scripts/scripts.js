@@ -11,11 +11,24 @@ window.onscroll = function () {
 // Menu burger
 var menu = document.getElementById("menu");
 var openBtn = document.getElementById("openMenu");
+var openMainMenus = document.querySelectorAll('#menu .main-menus');
 openBtn.addEventListener('click', function (event) {
     menu.classList.toggle('active-menu');
     openBtn.classList.toggle('closeMenu');
 })
 
+openMainMenus.forEach(mainMenu => {
+    mainMenu.addEventListener('click', function (event) {
+        if (mainMenu.classList.contains('active-mainMenu')) {
+            mainMenu.classList.toggle('active-mainMenu');
+        } else {
+            openMainMenus.forEach(mainMenus => {
+                mainMenus.classList.remove('active-mainMenu');
+            });
+            mainMenu.classList.toggle('active-mainMenu');
+        }
+    });
+});
 
 
 // Modification hero barner
@@ -25,8 +38,8 @@ var images = [
     'url("assets/images/bannpic.webp")',
     'url("assets/images/pexels-fauxels-3183150.webp")',
     'url("assets/images/reading-glasses-piles-coins-high-view.webp")',
-    'url("assets/images/pexels-fauxels-3183150.webp")',
-    'url("assets/images/reading-glasses-piles-coins-high-view.webp")'
+    'url("assets/images/pexels-padrinan-194094.webp")',
+    'url("assets/images/man-wearing-smart-glasses.webp")'
 
 ];
 const texts = [
@@ -56,11 +69,11 @@ var dots = document.querySelectorAll('.banndots span');
 // Convertir en tableau pour utiliser forEach
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-        currentIndex=index;
+        currentIndex = index;
         changeBackgroundImage();
         console.log(index);
     });
-  });
+});
 
 // const loader = document.querySelector('.loader');
 // window.addEventListener('load', () => {
