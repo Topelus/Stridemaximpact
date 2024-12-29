@@ -1389,6 +1389,9 @@ footer .copyright {
     .presentation .pretext article {
         margin: 0px 0px 20px 0px;
     }
+    .presentation p {
+        font-size: calc(9px + 2vw);
+    }
 
     .presentation .pretext aside {
         top: auto;
