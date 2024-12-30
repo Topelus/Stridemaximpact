@@ -92,7 +92,7 @@ header {
 .parralax-header .Int h1 {
     transform: translateX(0px);
     opacity: 1;
-    animation:none;
+    animation: none;
 }
 
 .parralax-header .Int p {
@@ -1151,7 +1151,6 @@ footer .copyright {
         transition: 500ms ease-in-out;
         box-sizing: border-box;
         padding: 4px;
-        /* margin-right: 20px; */
         cursor: pointer;
     }
 
@@ -1342,6 +1341,19 @@ footer .copyright {
         font-size: calc(5px + 2vw) !important;
     }
 
+    #interventions {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .Interv-ico {
+        width: 100%;
+        flex-direction: row !important;
+    }
+    .Interv-ico span {
+        width: 100% !important;
+    }
+
     /* Fin Page intervention */
 
     .partenaires div {
@@ -1480,13 +1492,15 @@ footer .copyright {
     .contact-CTA form {
         flex-direction: column !important;
     }
+
     .contact-CTA h2 {
-        font-size:calc(20px + 1vw) !important;
+        font-size: calc(20px + 1vw) !important;
     }
+
     .contact-CTA h3 {
-        font-size:calc(8px + 1vw) !important;
+        font-size: calc(8px + 1vw) !important;
     }
-    
+
 
     footer .foot {
         align-items: center;
@@ -1829,7 +1843,8 @@ footer .copyright {
 
 
 /* Page interventions */
-/* .Interventions .banntext h1 {
+
+.Interventions .banntext h1 {
     font-size: calc(23px + 4vmin);
     width: 100%;
     color: white;
@@ -1837,14 +1852,86 @@ footer .copyright {
     transform: translateX(0px);
     animation: none;
 }
+#interventions {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    gap: 2px;
+    /* margin: 0px 50px 0px 50px; */
+    position: relative;
+}
+#interventions .img_Interv {
+    min-width: 415px;
+    height: 415px;
+    background-image: url('../images/pexels-emmy-e-1252107-2381069_1.webp');
+    background-position: center;
+    background-size: cover;
+}
+.Interv-ico {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
-.Interventions .banntext ul {
-    padding-inline-start: 0px;
+.Interv-ico span {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(187, 109, 1, 0.08);
+}
+.Interv-ico span:hover {
+    background-color: rgba(187, 109, 1, 0.5);
+}
+#interventions h1 {
+    font-size: calc(20px + 1vw);
+    text-align: center;
+}
+.interventions article{
+    padding: 10px;
+    position: relative;
+}
+.interventions ul{
+    text-align: justify;
+    font-size: calc(10px + 1vw);
+}
+.interventions .swipe {
+    position: absolute;
+    /* position: relative; */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 1px;
+    bottom: -30px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interventions .swipe i {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+    transition: 200ms ease-in;
+}
+
+.interventions .swipe i:hover {
+    transform: scale(1.1, 1.1);
+    color: rgb(187, 109, 1);
+    transition: 200ms ease-in;
+}
+
+.interventions .left {
+    left: 20px;
+    /* margin: 0px 0px 30px 30px; */
+}
+
+.interventions .right {
+    right: 20px;
+    /* margin: 0px 30px 30px 0px; */
 }
 
 
-
-#interventions {
+/* #interventions {
     width: 100%;
     min-height: 70vh;
     overflow: hidden;
@@ -1858,6 +1945,9 @@ footer .copyright {
     text-align: center;
     margin-bottom: 20px;
 }
+.intervention img{
+    height: 300px;
+}
 
 .intervention {
     width: 100%;
@@ -1868,10 +1958,6 @@ footer .copyright {
     transition: 200ms ease-in-out;
     display: inline-block;
     transition: 0.5s;
-}
-
-.intervention ul {
-    padding-inline-start: 0px;
 }
 
 .intervention:nth-child(1),
@@ -1941,7 +2027,7 @@ footer .copyright {
 
 
 
-.contact-CTA{
+.contact-CTA {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -1952,30 +2038,21 @@ footer .copyright {
     background-size: cover;
     position: relative;
 }
-/* .contact-CTA::after{
-    content: '';
-    background-image: url('../images/pexels-joenibraw-1416530.webp');
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    opacity: 50%;
-} */
+
 
 .contact-CTA h2 {
     color: rgb(0, 0, 0);
     font-weight: 800;
-    font-size:calc(12px + 1vw);
+    font-size: calc(12px + 1vw);
 }
+
 .contact-CTA h3 {
     color: rgb(0, 0, 0);
     font-weight: 400;
-    font-size:calc(2px + O.2vw);
+    font-size: calc(2px + O.2vw);
 }
-.contact-CTA form div{
+
+.contact-CTA form div {
     width: 50%;
 }
 
@@ -1987,7 +2064,7 @@ footer .copyright {
     gap: 50px;
 }
 
-.contact-CTA  form div{
+.contact-CTA form div {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2005,7 +2082,8 @@ footer .copyright {
     resize: none;
     outline: none;
 }
-.contact-CTA input{
+
+.contact-CTA input {
     width: 100%;
     height: 50px;
     outline: none;
