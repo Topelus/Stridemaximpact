@@ -8,7 +8,7 @@ function showSection() {
         allSections.forEach(sections => {
             sections.classList.remove('active-section');
         });
-        const allIconAbout = document.querySelectorAll('.icoAbout div');
+        const allIconAbout = document.querySelectorAll('.icoAbout a');
         allIconAbout.forEach(iconsAbout => {
             iconsAbout.classList.remove('active-icon');
         });
@@ -17,8 +17,16 @@ function showSection() {
         if (section) {
             section.classList.add('active-section');
         }
+
+        const lien = document.querySelector(`a[href="${sectionToShow}"]`); 
+
+        // Vérifier si le lien a été trouvé et agir
+        if (lien) {
+            lien.classList.add('active-icon');
+        }
     }
 }
+
 
 // Menu burger
 var menu = document.getElementById("menu");
@@ -44,7 +52,6 @@ openMainMenus.forEach(mainMenu => {
 
 
 
-// document.addEventListener('DOMContentLoaded', function () {})
 var mvs = document.getElementsByClassName('titresMV');
 
 // Convertir en tableau pour utiliser forEach
@@ -53,5 +60,3 @@ Array.from(mvs).forEach(lists => {
         lists.classList.toggle('tooglemv');
     });
 });
-
-console.log(mvs);
