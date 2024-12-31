@@ -72,7 +72,7 @@ function changeBackgroundImage() {
 // Initial call to set the first background image
 changeBackgroundImage();
 // Change the background every 10 seconds (10000 milliseconds)
-// setInterval(changeBackgroundImage, 10000);
+setInterval(changeBackgroundImage, 10000);
 
 var dots = document.querySelectorAll('.banndots span');
 
