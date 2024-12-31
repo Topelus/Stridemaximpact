@@ -37,7 +37,7 @@ const banner = document.getElementById('banntext');
 var images = [
     'url("assets/images/bannpic.webp")',
     'url("assets/images/stacking-wooden-blocks-is-risk-creating-business-growth-ideas.webp")',
-    'url("assets/images/office-employee-analyzing-business-charts-computer-documents-looking-online-research-data-create-pre.webp")',
+    'url("assets/images/open-book-with-light-bulb-_1.webp")',
     'url("assets/images/pexels-padrinan-194094.webp")',
     'url("assets/images/man-wearing-smart-glasses.webp")'
 

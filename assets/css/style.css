@@ -266,7 +266,7 @@ header {
     border: 2px rgb(187, 109, 1) solid;
     transition: 500ms ease-in-out;
 }
-.scrolled .main-menus{
+.scrolled .main-menus span{
     color: rgb(187, 109, 1);
 }
 
