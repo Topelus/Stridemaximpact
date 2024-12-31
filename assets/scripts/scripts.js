@@ -56,7 +56,7 @@ const texts = [
     <p>Optimiser la gouvernance et stimuler le management de votre organisation pour des performances accrues, basées sur les meilleures pratiques et un leadership fort.</p>`,
 
     `<h1><span style="color:rgb(255, 255, 255);">Connecter, Communiquer et Captiver</span></h1>
-    <p>Créer des connexions fortes et des événements mémorables avec nos solutions intégrées en télécommunications et communication. Nous vous aidons à toucher votre audience de manière durable et percutante.</p>`,
+    <p>Créer des connections fortes et des événements mémorables avec nos solutions intégrées en télécommunications et communication. Nous vous aidons à toucher votre audience de manière durable et percutante.</p>`,
 ];
 
 

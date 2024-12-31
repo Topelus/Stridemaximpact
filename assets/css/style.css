@@ -81,7 +81,7 @@ header {
 }
 
 .parralax-header .banntext p {
-    font-size: calc(4px + 1vw);
+    font-size: calc(5px + 1.1vw);
     font-weight: 300;
     transform: translateY(30px);
     opacity: 1;
@@ -265,6 +265,9 @@ header {
     background-color: rgb(255, 255, 255);
     border: 2px rgb(187, 109, 1) solid;
     transition: 500ms ease-in-out;
+}
+.scrolled .main-menus{
+    color: rgb(187, 109, 1);
 }
 
 .top-navbar {
