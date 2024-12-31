@@ -50,7 +50,7 @@ const texts = [
     <p>Nous vous accompagnons avec des solutions sur mesure pour faire grandir votre PME et assurer sa pérennité. Ensemble, développons l'avenir de votre entreprise!</p>`,
 
     `<h1><span style="color:rgb(255, 255, 255);">L'Excellence par la Connaissance</span></h1>
-    <p>Explorer de nouvelles perspectives à partir des études approfondies, des recherches et formations pour être à la pointe de l'innovation'.</p>`,
+    <p>Explorer de nouvelles perspectives à partir des études approfondies, des recherches et formations de qualité pour être à la pointe de l'innovation'.</p>`,
 
     `<h1><span style="color:rgb(255, 255, 255);">Renforcer votre Leadership</span></h1>
     <p>Optimiser la gouvernance et stimuler le management de votre organisation pour des performances accrues, basées sur les meilleures pratiques et un leadership fort.</p>`,
