@@ -52,11 +52,11 @@ openMainMenus.forEach(mainMenu => {
 
 
 
-var mvs = document.getElementsByClassName('titresMV');
+// var mvs = document.getElementsByClassName('titresMV');
 
-// Convertir en tableau pour utiliser forEach
-Array.from(mvs).forEach(lists => {
-    lists.addEventListener('click', function (event) {
-        lists.classList.toggle('tooglemv');
-    });
-});
+// // Convertir en tableau pour utiliser forEach
+// Array.from(mvs).forEach(lists => {
+//     lists.addEventListener('click', function (event) {
+//         lists.classList.toggle('tooglemv');
+//     });
+// });

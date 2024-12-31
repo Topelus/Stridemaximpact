@@ -36,19 +36,29 @@ var backgroundContainer = document.querySelector('.parralax-header.home');
 const banner = document.getElementById('banntext');
 var images = [
     'url("assets/images/bannpic.webp")',
-    'url("assets/images/pexels-fauxels-3183150.webp")',
-    'url("assets/images/reading-glasses-piles-coins-high-view.webp")',
+    'url("assets/images/stacking-wooden-blocks-is-risk-creating-business-growth-ideas.webp")',
+    'url("assets/images/office-employee-analyzing-business-charts-computer-documents-looking-online-research-data-create-pre.webp")',
     'url("assets/images/pexels-padrinan-194094.webp")',
     'url("assets/images/man-wearing-smart-glasses.webp")'
 
 ];
 const texts = [
-    "<h1>Bienvenue à Stride</h1><p> Architecte du progrès, nous embrassons la diversité en catalysant l'innovation pour bâtir un monde où chaque interaction crée une opportunité de croissance, de prospérité et de partage.</p >",
-    "<h1>Boostez la Croissance de votre entreprise</h1><p> Nous vous accompagnons avec des solutions sur mesure pour faire grandir votre PME et assurer sa pérennité. Ensemble, développons l'avenir de votre entreprise.</p > ",
-    "<h1>L'Excellence par la Connaissance</h1><p> Explorez de nouvelles perspectives avec nos études approfondies, nos recherches innovantes et nos formations spécialisées pour rester à la pointe de votre secteur.</p >",
-    "<h1>Renforcez Votre Leadership</h1><p>Optimisez la gouvernance et stimulez le management de votre organisation pour des performances accrues, basées sur les meilleures pratiques et un leadership fort</p >",
-    "<h1>Connecter, Communiquer et Captiver</h1><p>Créez des connexions fortes et des événements mémorables avec nos solutions intégrées en télécommunications et communication. Nous vous aidons à toucher votre audience de manière durable et percutante.</p >",
+    `<h1>Bienvenue à <span style="color: #186cfb;">Stride</span></h1>
+    <p>Architecte du progrès, nous embrassons la diversité en catalysant l'innovation pour bâtir un monde où chaque interaction crée une opportunité de croissance, de prospérité et de partage.</p>`,
+
+    `<h1>Booster la Croissance de votre entreprise</h1>
+    <p>Nous vous accompagnons avec des solutions sur mesure pour faire grandir votre PME et assurer sa pérennité. Ensemble, développons l'avenir de votre entreprise.</p>`,
+
+    `<h1>L'Excellence par la Connaissance</h1>
+    <p>Explorez de nouvelles perspectives avec nos études approfondies, nos recherches innovantes et nos formations spécialisées pour rester à la pointe de votre secteur.</p>`,
+
+    `<h1>Renforcer Votre Leadership</h1>
+    <p>Optimisez la gouvernance et stimulez le management de votre organisation pour des performances accrues, basées sur les meilleures pratiques et un leadership fort.</p>`,
+
+    `<h1>Connecter, Communiquer et Captiver</h1>
+    <p>Créez des connexions fortes et des événements mémorables avec nos solutions intégrées en télécommunications et communication. Nous vous aidons à toucher votre audience de manière durable et percutante.</p>`,
 ];
+
 
 var currentIndex = 0;
 
