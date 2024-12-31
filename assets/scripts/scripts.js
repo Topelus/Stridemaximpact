@@ -46,16 +46,16 @@ const texts = [
     `<h1>Bienvenue à <span style="color: #186cfb;">Stride</span></h1>
     <p>Architecte du progrès, nous embrassons la diversité en catalysant l'innovation pour bâtir un monde où chaque interaction crée une opportunité de croissance, de prospérité et de partage.</p>`,
 
-    `<h1><span style="color: rgb(187, 109, 1);">Booster la croissancede votre entreprise</span></h1>
+    `<h1><span style="color: #186cfb;">Booster la croissancede votre entreprise</span></h1>
     <p>Nous vous accompagnons avec des solutions sur mesure pour faire grandir votre PME et assurer sa pérennité. Ensemble, développons l'avenir de votre entreprise!</p>`,
 
-    `<h1><span style="color: rgb(187, 109, 1);">L'Excellence par la Connaissance</span></h1>
+    `<h1><span style="color: #186cfb;">L'Excellence par la Connaissance</span></h1>
     <p>Explorer de nouvelles perspectives à partir des études approfondies, des recherches et formations pour être à la pointe de l'innovation'.</p>`,
 
-    `<h1><span style="color: rgb(187, 109, 1);">Renforcer votre Leadership</span></h1>
+    `<h1><span style="color: #186cfb;">Renforcer votre Leadership</span></h1>
     <p>Optimiser la gouvernance et stimuler le management de votre organisation pour des performances accrues, basées sur les meilleures pratiques et un leadership fort.</p>`,
 
-    `<h1><span style="color: rgb(187, 109, 1);">Connecter, Communiquer et Captiver</span></h1>
+    `<h1><span style="color: #186cfb;">Connecter, Communiquer et Captiver</span></h1>
     <p>Créer des connexions fortes et des événements mémorables avec nos solutions intégrées en télécommunications et communication. Nous vous aidons à toucher votre audience de manière durable et percutante.</p>`,
 ];
 
@@ -72,7 +72,7 @@ function changeBackgroundImage() {
 // Initial call to set the first background image
 changeBackgroundImage();
 // Change the background every 10 seconds (10000 milliseconds)
-setInterval(changeBackgroundImage, 10000);
+// setInterval(changeBackgroundImage, 10000);
 
 var dots = document.querySelectorAll('.banndots span');
 
