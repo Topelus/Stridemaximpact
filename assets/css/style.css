@@ -213,7 +213,7 @@ header {
     background-image: url('../images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving.webp');
 }
 
-
+/* 
 .parralax-header.about::after {
     content: "A Propos";
     white-space: nowrap;
@@ -225,7 +225,7 @@ header {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 
 
 #navigation {
@@ -266,7 +266,8 @@ header {
     border: 2px rgb(187, 109, 1) solid;
     transition: 500ms ease-in-out;
 }
-.scrolled .main-menus span{
+
+.scrolled .main-menus span {
     color: rgb(187, 109, 1);
 }
 
@@ -675,96 +676,9 @@ section {
 }
 
 .about h1 {
-    font-size: 3.5vw;
+    font-size: calc(20px + 1vw);
     font-weight: bold;
     text-align: center;
-}
-
-.about .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 0px;
-}
-
-.about .pretext p {
-    font-size: 1.7em;
-    font-weight: bold;
-}
-
-.about .pretext aside {
-    width: 70%;
-    min-width: 300px;
-    height: 100%;
-    background-image: url('../images/pexels-thirdman-5060979.webp');
-    background-size: cover;
-    position: relative;
-    flex-shrink: 0;
-    filter: brightness(70%) contrast(120%);
-}
-
-.about .links-about {
-    width: 70%;
-}
-
-.about .links-about ul {
-    list-style-type: none;
-
-}
-
-.about .links-about ul li {
-    height: 80px;
-    border-top: 3px rgb(187, 109, 1) solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 300ms ease-in-out;
-}
-
-.about .links-about ul a {
-    font-size: 1.5em;
-    text-decoration: none;
-    color: rgb(187, 109, 1);
-    font-weight: 600;
-    transition: 300ms ease-in-out;
-}
-
-.about .links-about ul i {
-    color: rgb(187, 109, 1);
-
-    transition: 300ms ease-in-out;
-}
-
-.about .links-about ul li:hover {
-    transition: 300ms ease-in-out;
-}
-
-.about .links-about ul li:hover a {
-    transition: 300ms ease-in-out;
-    transform: translateX(30px);
-}
-
-.about .links-about ul li:hover i {
-    transform: rotateZ(45deg);
-    transition: 300ms ease-in-out;
-}
-
-.about .about-button {
-    padding: 20px 30px;
-    border-radius: 5px;
-    background-color: rgb(187, 109, 1);
-    transition: 500ms ease-in-out;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 500;
-    border: 2px rgb(187, 109, 1) solid;
-    right: 0px;
-}
-
-.about .about-button:hover {
-    background-color: white;
-    transition: 500ms ease-in-out;
-    color: rgb(187, 109, 1);
 }
 
 /* Fin section 2 */
@@ -960,36 +874,7 @@ section {
 
 /* fin section 4 */
 
-/* fin section 5*/
-.partenaires {
-    width: 100%;
-    background-color: rgba(187, 109, 1, 0.08);
-    box-sizing: border-box;
-}
 
-.partenaires div {
-    display: flex;
-    width: 100%;
-    gap: 50px;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.partenaires div span {
-    width: 300px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.partenaires div span img {
-    width: 100%;
-    filter: grayscale(1);
-    mix-blend-mode: darken;
-}
-
-/* fin section 5 */
 
 
 
@@ -1028,7 +913,7 @@ footer .foot>div {
     flex-direction: column;
     justify-content: space-between;
     color: rgb(211, 211, 211);
-    width: 25%;
+    width: 20%;
 }
 
 footer .foot .follow-us>div {
@@ -1273,11 +1158,12 @@ footer .copyright {
     .icoAbout {
         flex-wrap: wrap;
     }
+
     .ourMVs .titresMV {
         height: 300px !important;
     }
 
-    .ourMVs .textsMv{
+    .ourMVs .textsMv {
         flex-direction: column;
         transform: translateY(-50px) !important;
     }
@@ -1295,19 +1181,21 @@ footer .copyright {
         width: 100%;
         box-sizing: border-box;
     }
+
     .Interv-ico {
         width: 100%;
         flex-direction: row !important;
     }
+
     .Interv-ico span {
         width: 100% !important;
     }
 
     /* Fin Page intervention */
 
-    .partenaires div {
+    /* .partenaires div {
         flex-wrap: wrap;
-    }
+    } */
 
 
     footer .foot {
@@ -1392,7 +1280,7 @@ footer .copyright {
         justify-content: space-between;
     }
 
-    .about .container {
+    /* .about .container {
         margin: 0px 0px;
         flex-direction: column;
         align-items: center;
@@ -1412,11 +1300,11 @@ footer .copyright {
 
     .about .links-about {
         width: 90%;
-    }
+    } */
 
 
     .team-member {
-        min-width:fit-content;
+        min-width: fit-content;
     }
 
 
@@ -1446,9 +1334,10 @@ footer .copyright {
 
     #interventions .img_Interv {
         width: 100%;
-        min-width:max-content !important;
+        min-width: max-content !important;
     }
-    .interventions ul{
+
+    .interventions ul {
         font-size: calc(15px + 0.5vw) !important;
     }
 
@@ -1496,7 +1385,6 @@ footer .copyright {
 
 #Us {
     margin: 0px 20px;
-    height: 100vh;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
@@ -1504,18 +1392,16 @@ footer .copyright {
 
 .ourMVs {
     width: 100%;
-    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    position: relative;
-    
+
 }
 
-.ourMVs .titresMV{
+.ourMVs .titresMV {
     width: 100%;
-    height: 100%;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1527,9 +1413,10 @@ footer .copyright {
     background-size: cover;
     flex-shrink: 0;
 }
-.ourMVs .textsMv{
+
+.ourMVs .textsMv {
     width: 70%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -1568,11 +1455,10 @@ footer .copyright {
 }
 
 .icoAbout div {
-    min-width: 150px;
     height: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-size: large;
     text-align: center;
@@ -1583,7 +1469,7 @@ footer .copyright {
 }
 
 .icoAbout div:hover {
-    background-image:linear-gradient(rgba(253, 232, 201, 0),rgb(253, 232, 201)) ;
+    background-image: linear-gradient(rgba(253, 232, 201, 0), rgb(253, 232, 201));
     transition: 200ms ease-in-out;
 }
 
@@ -1591,6 +1477,7 @@ footer .copyright {
 
 .active-icon div {
     background-color: rgb(253, 232, 201);
+    border-bottom: 10px rgb(187, 109, 1) solid;
 }
 
 #Valeurs {
@@ -1771,6 +1658,71 @@ footer .copyright {
 }
 
 
+.partenaires {
+    width: 100%;
+    /* background-color: rgba(187, 109, 1, 0.08); */
+    padding: 50px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partenaires div {
+    display: flex;
+    height: 150px;
+    width: calc(300px *5);
+    /* gap: 50px; */
+    justify-content: space-around;
+    align-items: center;
+    animation: scroll 15s linear infinite;
+    /* border: 1px black solid; */
+}
+.partenaires aside {
+    height: 150px;
+    width: calc(300px *5);
+    /* border: 1px black solid; */
+    overflow: hidden;
+}
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-300px*5));
+    }
+}
+
+.partenaires div span {
+    min-width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.partenaires div span img {
+    width: 100%;
+    filter: grayscale(1);
+    mix-blend-mode: darken;
+    min-width: 110px;
+}
+
+.partenaires div span a {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    font-size: calc(13px);
+}
+
+.partenaires div span a:hover {
+    color: rgb(187, 109, 1);
+}
+
+/* Fin page about */
+
 /* Page interventions */
 
 .Interventions .banntext h1 {
@@ -1781,6 +1733,7 @@ footer .copyright {
     transform: translateX(0px);
     animation: none;
 }
+
 #interventions {
     width: 100%;
     overflow: hidden;
@@ -1790,6 +1743,7 @@ footer .copyright {
     /* margin: 0px 50px 0px 50px; */
     position: relative;
 }
+
 #interventions .img_Interv {
     min-width: 415px;
     height: 415px;
@@ -1797,6 +1751,7 @@ footer .copyright {
     background-position: center;
     background-size: cover;
 }
+
 .Interv-ico {
     display: flex;
     flex-direction: column;
@@ -1816,27 +1771,34 @@ footer .copyright {
     text-decoration: none;
     color: black;
 }
-.active-icon-interv{
+
+.active-icon-interv {
     background-color: rgb(187, 109, 1) !important;
     color: white !important;
 
 }
-.active-icon-interv svg{
+
+.active-icon-interv svg {
     color: white !important;
 
 }
-.Interv-ico a span{
+
+.Interv-ico a span {
     font-size: 11px;
     text-align: center;
 }
+
 .Interv-ico a svg {
     width: 50px;
     /* color:rgb(187, 109, 1) ; */
     color: rgb(49, 49, 49);
 }
-.Interv-ico a:hover svg,.Interv-ico a:hover span {
-    color:rgb(255, 255, 255) ;
+
+.Interv-ico a:hover svg,
+.Interv-ico a:hover span {
+    color: rgb(255, 255, 255);
 }
+
 .Interv-ico a:hover {
     background-color: rgba(187, 109, 1, 0.5);
 }
@@ -1845,151 +1807,28 @@ footer .copyright {
     font-size: calc(20px + 1vw);
     text-align: center;
 }
-.interventions article{
+
+.interventions article {
     padding: 10px;
     position: relative;
 }
-.interventions article div{
+
+.interventions article div {
     display: none;
 }
-.active-interv{
+
+.active-interv {
     display: block !important;
 }
-.interventions ul{
+
+.interventions ul {
     text-align: justify;
     font-size: calc(10px + 0.5vw);
 }
-.interventions .swipe {
-    position: absolute;
-    /* position: relative; */
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    padding: 1px;
-    bottom: -30px;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.interventions ul li {
+    margin-bottom: 15px;
 }
-
-.interventions .swipe i {
-    font-size: 1rem;
-    color: rgba(0, 0, 0, 0.8);
-    transition: 200ms ease-in;
-}
-
-.interventions .swipe i:hover {
-    transform: scale(1.1, 1.1);
-    color: rgb(187, 109, 1);
-    transition: 200ms ease-in;
-}
-
-.interventions .left {
-    left: 20px;
-    /* margin: 0px 0px 30px 30px; */
-}
-
-.interventions .right {
-    right: 20px;
-    /* margin: 0px 30px 30px 0px; */
-}
-
-
-/* #interventions {
-    width: 100%;
-    min-height: 70vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.intervention h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.intervention img{
-    height: 300px;
-}
-
-.intervention {
-    width: 100%;
-    flex-shrink: 0;
-    border-radius: 30px;
-    padding: 30px;
-    box-sizing: border-box;
-    transition: 200ms ease-in-out;
-    display: inline-block;
-    transition: 0.5s;
-}
-
-.intervention:nth-child(1),
-.intervention:nth-child(2) {
-    left: -100%;
-    opacity: 0;
-    position: absolute;
-}
-
-.intervention:nth-child(3) {
-    font-size: calc(2px + 1.4vw);
-}
-
-.intervention:nth-child(n + 4) {
-    left: 100%;
-    opacity: 0;
-    z-index: -1;
-    position: absolute;
-}
-
-.intervention ul li {
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.intervention article {
-    display: flex;
-    gap: 10px;
-}
-
-
-#slider-interventions {
-    position: relative;
-    height: auto;
-}
-
-#slider-interventions .swipe {
-    position: absolute;
-    cursor: pointer;
-    bottom: 0%;
-}
-
-#slider-interventions .swipe i {
-    font-size: 3rem;
-    color: rgba(0, 0, 0, 0.8);
-    transition: 200ms ease-in;
-}
-
-#slider-interventions .swipe i:hover {
-    transform: scale(1.1, 1.1);
-    color: rgb(187, 109, 1);
-    transition: 200ms ease-in;
-}
-
-#slider-interventions .left {
-    left: 20px;
-    transform: rotateZ(90deg);
-    margin-left: 30px;
-}
-
-#slider-interventions .right {
-    right: 20px;
-    transform: rotateZ(-90deg);
-    margin-right: 30px;
-} */
-
-
 
 
 .contact-CTA {
@@ -2007,8 +1846,8 @@ footer .copyright {
 
 .contact-CTA h2 {
     color: rgb(0, 0, 0);
-    font-weight: 800;
-    font-size: calc(12px + 1vw);
+    font-weight: 700;
+    font-size: calc(10px + 1vw);
 }
 
 .contact-CTA h3 {
@@ -2042,13 +1881,15 @@ footer .copyright {
     min-width: 150px;
     margin-bottom: 20px;
     font-size: 1.1rem;
-    font-weight: 500;
     border: none;
     resize: none;
     outline: none;
 }
 
 .contact-CTA input {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
     width: 100%;
     height: 50px;
     outline: none;
@@ -2070,6 +1911,5 @@ footer .copyright {
     color: rgb(187, 109, 1);
     transition: 300ms ease-in-out;
 }
-
 
 /* fin page interventions */

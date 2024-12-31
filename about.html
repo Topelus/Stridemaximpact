@@ -108,7 +108,8 @@
                     <div class="moove_menu" id="menu">
                         <ul>
                             <li><a href="index.html" class="main-menus">Acceuil</a></li>
-                            <li class="main-menus"><span>A propos <i class="fa fa-angle-down"></i></span>
+                            <li class="main-menus"><span style="color: #ff9100; font-weight: bold;">A propos <i
+                                        class="fa fa-angle-down"></i></span>
                                 <ul class="sous-menus">
                                     <li><a href="about.html#Us">Qui Sommes-nous?</a></li>
                                     <li><a href="about.html#Valeurs">Nos Valeurs</a></li>
@@ -140,7 +141,8 @@
         </div>
     </header>
     <div id="bloc_page">
-        <div class="icoAbout"><a href="#Us">
+        <div class="icoAbout">
+            <a href="#Us">
                 <div>Notre mission et vision ></div>
             </a>
             <a href="#Valeurs">
@@ -162,7 +164,8 @@
                     <div class="titresMV">
                     </div>
                     <div class="textsMv">
-                        <div><h1>Notre Mission</h1>
+                        <div>
+                            <h1>Notre Mission</h1>
                             <ul style="padding-inline-start: 10px;">
                                 <li>Promouvoir la bonne gouvernance en fournissant des solutions novatrices, des
                                     connaissances
@@ -178,7 +181,7 @@
                             </ul>
                         </div>
                         <div>
-                        <div><h1>Notre Vision</h1>
+                            <h1>Notre Vision</h1>
                             <p>Être le catalyseur d'un monde prospère et éthique, où la gouvernance, l'innovation, la
                                 collaboration et la prise de décisions basées sur des évidences sont les piliers du
                                 développement durable.</p>
@@ -320,114 +323,154 @@
             </section>
             <section class="about" id="References">
                 <h1>Nos Références</h1>
-            </section>
-
-            <section class="about" id="Team">
-                <h1>Notre Equipe</h1>
-
                 <style>
-                    #Team {
+                    #References {
                         flex-direction: column;
-                        /* box-sizing: border-box;
-                        width: 100%; */
-                    }
-
-                    header h1 {
-                        margin: 0;
-                        font-size: 2.5rem;
-                    }
-
-                    .team-container {
-                        display: flex;
-                        flex-wrap: wrap;
-                        gap: 20px;
-                        padding: 40px;
-                        justify-content: center;
-                        box-sizing: border-box;
-                    }
-
-                    .team-member {
-                        background: white;
-                        border-radius: 8px;
-                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                        text-align: center;
-                        padding: 20px;
-                        min-width: 300px;
-                        height: 400px;
-                        /* box-sizing: border-box; */
-                    }
-
-                    .team-member img {
-                        width: 200px;
-                        height: 200px;
-                        border-radius: 50%;
-                        object-fit: cover;
-                        margin-bottom: 15px;
-                    }
-
-                    .team-member h3 {
-                        margin: 10px 0 5px;
-                        font-size: 1.5rem;
-                        color: rgb(187, 109, 1);
-                    }
-
-                    .team-member p {
-                        margin: 0;
-                        font-size: 1rem;
-                        color: #555;
+                        padding: 30px 0px 30px 0px;
                     }
                 </style>
-
-                <main>
-                    <div class="team-container">
-                        <div class="team-member">
-                            <img src="https://via.placeholder.com/150" alt="Portrait de Jean Dupont">
-                            <h3>Prenom Nom</h3>
-                            <p>Directeur Général</p>
-                        </div>
-                        <div class="team-member">
-                            <img src="https://via.placeholder.com/150" alt="Portrait de Marie Lefèvre">
-                            <h3>Prenom Nom</h3>
-                            <p>Responsable Marketing</p>
-                        </div>
-                        <div class="team-member">
-                            <img src="https://via.placeholder.com/150" alt="Portrait de Ali Diouf">
-                            <h3>Prenom Nom</h3>
-                            <p>Chef de Projet</p>
-                        </div>
-                        <div class="team-member">
-                            <img src="https://via.placeholder.com/150" alt="Portrait de Sarah Nguyen">
-                            <h3>Prenom Nom</h3>
-                            <p>Designer UX/UI</p>
-                        </div>
-                        <div class="team-member">
-                            <img src="https://via.placeholder.com/150" alt="Portrait de Karim Ahmed">
-                            <h3>Prenom Nom</h3>
-                            <p>Développeur Web</p>
-                        </div>
-                    </div>
-                </main>
-
-
-                <section class="contact-CTA">
-                    <form action="">
+                <div class="partenaires" id="partenaires">
+                    <aside>
                         <div>
-                            <h2>Une question ? Un projet ? Contactez-nous dès maintenant et laissez-nous vous
-                                accompagner vers le
-                                succès !</h2>
-                            <h3>Nous sommes à votre écoute pour répondre à vos besoins et vous offrir des solutions
-                                adaptées.</h3>
-                            <input type="text" id="name" name="user_name" placeholder="Adresse email">
-                        </div>
-                        <div>
-                            <textarea name="" id="" placeholder="Message"></textarea>
-                            <input type="submit" value="Envoyer">
-                        </div>
-                    </form>
-                </section>
-            </section>
+                            <span><img src="assets/images/logo-giz.png" alt=""
+                                    style="min-width: 130px; max-width: 300px;"><a href="">En savoir plus ></a></span>
+                            <span><img src="assets/images/GU group.jpg" alt=""
+                                    style="height: 100%; width:auto; max-width: 300px;"><a href="">En savoir plus
+                                    ></a></span>
+                            <span><img src="assets/images/HEL_Logo_3d_Benin_colour_web.png" alt=""
+                                    style="min-width: 130px;max-width: 300px;"><a href="">En savoir
+                                    plus ></a></span>
+                            <span><img src="assets/images/WAHO.png" alt=""
+                                    style="height: 80%; width:auto;max-width: 300px;"><a href="">En
+                                    savoir plus ></a></span>
+                            <span><img src="assets/images/Tappi2.png" alt=""
+                                    style="min-width: 130px;max-width: 300px;"><a href="">En savoir plus ></a></span>
 
+                            <span><img src="assets/images/logo-giz.png" alt=""
+                                    style="min-width: 130px;max-width: 300px,"><a href="">En savoir plus ></a></span>
+                            <span><img src="assets/images/GU group.jpg" alt=""
+                                    style="height: 100%; width:auto;max-width: 300px;"><a href="">En savoir plus
+                                    ></a></span>
+                            <span><img src="assets/images/HEL_Logo_3d_Benin_colour_web.png" alt=""
+                                    style="min-width: 130px;max-width: 300px;"><a href="">En savoir
+                                    plus ></a></span>
+                            <span><img src="assets/images/WAHO.png" alt=""
+                                    style="height: 80%; width:auto;max-width: 300px;"><a href="">En
+                                    savoir plus ></a></span>
+                            <span><img src="assets/images/Tappi2.png" alt=""
+                                    style="min-width: 130px;max-width: 300px;"><a href="">En savoir plus ></a></span>
+                        </div>
+                    </aside>
+                </div>
         </div>
+        </section>
+
+        <section class="about" id="Team">
+            <h1>Notre Equipe</h1>
+
+            <style>
+                #Team {
+                    flex-direction: column;
+                    /* box-sizing: border-box;
+                        width: 100%; */
+                }
+
+                header h1 {
+                    margin: 0;
+                    font-size: 2.5rem;
+                }
+
+                .team-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    padding: 40px;
+                    justify-content: center;
+                    box-sizing: border-box;
+                }
+
+                .team-member {
+                    background: white;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                    padding: 20px;
+                    min-width: 300px;
+                    height: 400px;
+                    /* box-sizing: border-box; */
+                }
+
+                .team-member img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-bottom: 15px;
+                }
+
+                .team-member h3 {
+                    margin: 10px 0 5px;
+                    font-size: 1.5rem;
+                    color: rgb(187, 109, 1);
+                }
+
+                .team-member p {
+                    margin: 0;
+                    font-size: 1rem;
+                    color: #555;
+                }
+            </style>
+
+            <main>
+                <div class="team-container">
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Portrait de Jean Dupont">
+                        <h3>Prenom Nom</h3>
+                        <p>Directeur Général</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Portrait de Marie Lefèvre">
+                        <h3>Prenom Nom</h3>
+                        <p>Responsable Marketing</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Portrait de Ali Diouf">
+                        <h3>Prenom Nom</h3>
+                        <p>Chef de Projet</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Portrait de Sarah Nguyen">
+                        <h3>Prenom Nom</h3>
+                        <p>Designer UX/UI</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://via.placeholder.com/150" alt="Portrait de Karim Ahmed">
+                        <h3>Prenom Nom</h3>
+                        <p>Développeur Web</p>
+                    </div>
+                </div>
+            </main>
+
+
+            <section class="contact-CTA">
+                <form action="">
+                    <div>
+                        <h2>Une question ? Un projet ? Contactez-nous dès maintenant et laissez-nous vous
+                            accompagner vers le
+                            succès !</h2>
+                        <h3>Nous sommes à votre écoute pour répondre à vos besoins et vous offrir des solutions
+                            adaptées.</h3>
+                        <input type="text" id="name" name="user_name" placeholder="Adresse email">
+                    </div>
+                    <div>
+                        <textarea name="" id="" placeholder="Message"></textarea>
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </section>
+        </section>
+
+    </div>
 
     </div>
     <footer>
