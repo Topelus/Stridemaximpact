@@ -205,7 +205,7 @@ header {
 .parralax-header.about {
     background-image: url('../images/pexels-weekendplayer-1098982.webp');
     filter: brightness(80%);
-    height: 80vh;
+    height: 50vh;
 }
 
 .parralax-header.Interventions {
@@ -1150,6 +1150,12 @@ footer .copyright {
         margin: 20px 20px;
     }
 
+    .callToAtion .button {
+        bottom: 20px;
+        left: 30px;
+    }
+
+
     /* Page about */
     #Us {
         height: auto !important;
@@ -1166,8 +1172,174 @@ footer .copyright {
     .ourMVs .textsMv {
         flex-direction: column;
         transform: translateY(-50px) !important;
+        width: 100% !important;
     }
 
+
+    #Valeurs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .valeursBox {
+        width: 400px !important;
+        height: 400px !important;
+        position: relative;
+        border: 1px black solid;
+    }
+
+    .about .valeursBox div {
+        height: 200px !important;
+        width: 200px !important;
+        position: relative !important;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: rgb(0, 0, 0) !important;
+        background-image: none !important;
+        border: 1px black solid;
+    }
+
+    .about .valeursBox div:hover {
+        background-image: linear-gradient(rgb(187, 109, 1), rgb(187, 109, 1));
+    }
+
+    .about .valeursBox div span {
+        width: 250px;
+        text-align: center;
+        box-sizing: border-box;
+        z-index: 1;
+        position: relative !important;
+        opacity: 1 !important;
+        border-radius: 0 !important;
+    }
+
+    .about .valeursBox div svg {
+        width: 40px !important;
+        padding: 10px;
+    }
+
+    .valeursBox div:nth-child(1) {
+        top: 0;
+        left: 0;
+        text-align: left;
+        border-radius: 10% 0% 0% 0% !important;
+        transition: 300ms ease-out;
+    }
+
+    .valeursBox div:nth-child(1) span {
+        width: 200px !important;
+        height: 200px !important;
+        right: -50%;
+        bottom: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px;
+        background-color: rgb(187, 109, 1);
+        transition: 300ms ease-out;
+    }
+
+    .valeursBox div:nth-child(2) {
+        top: 0;
+        right: 0;
+        border-radius: 0% 10% 0% 0% !important;
+        transition: 300ms ease-out;
+    }
+
+    .valeursBox div:nth-child(2) span {
+        position: absolute;
+        width: 200px !important;
+        height: 200px !important;
+        background-color: rgba(127, 255, 212, 0);
+        left: -50%;
+        bottom: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0px 30px;
+        background-color: rgb(187, 109, 1);
+        transition: 300ms ease-out;
+        opacity: 0;
+    }
+
+    .valeursBox div:nth-child(3) {
+        bottom: 0;
+        left: 0;
+        border-radius: 0% 0% 0% 10% !important;
+        transition: 300ms ease-out;
+    }
+
+    .valeursBox div:nth-child(3) span {
+        position: absolute;
+        width: 200px !important;
+        height: 200px !important;
+        background-color: rgba(127, 255, 212, 0);
+        right: -50%;
+        top: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0px 30px;
+        background-color: rgb(187, 109, 1);
+        transition: 300ms ease-out;
+        opacity: 0;
+    }
+
+    .valeursBox div:nth-child(4) {
+        bottom: 0;
+        right: 0;
+        border-radius: 0% 0% 10% 0% !important;
+        transition: 300ms ease-out;
+    }
+
+    .valeursBox div:nth-child(4) span {
+        position: absolute;
+        width: 200px !important;
+        height: 200px !important;
+        background-color: rgba(127, 255, 212, 0);
+        left: -50%;
+        top: -50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 0px 30px;
+        background-color: rgb(187, 109, 1);
+        transition: 300ms ease-out;
+        opacity: 0;
+    }
+
+
+    .valeursBox div:nth-child(5) {
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        z-index: 0;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+    .valeursBox div:nth-child(5)::after {
+        content: "";
+        position: absolute;
+        width: 92%;
+        height: 92%;
+        border-radius: 50%;
+        border: 2px white solid;
+    }
+
+    .valeursBox div:nth-child(5) span {
+        display: flex;
+    }
 
     /* Fin Page about */
 
@@ -1302,7 +1474,6 @@ footer .copyright {
         width: 90%;
     } */
 
-
     .team-member {
         min-width: fit-content;
     }
@@ -1331,6 +1502,9 @@ footer .copyright {
         width: 100%;
     }
 
+    .icoAbout a {
+        width: 50% !important;
+    }
 
     #interventions .img_Interv {
         width: 100%;
@@ -1422,7 +1596,7 @@ footer .copyright {
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
     padding: 20px;
     box-sizing: border-box;
-    border-top: 10px rgb(187, 109, 1) solid;
+    /* border-top: 10px rgb(187, 109, 1) solid; */
     background-color: rgb(244 230 211);
     transform: translateY(-100px);
     gap: 20px;
@@ -1442,14 +1616,13 @@ footer .copyright {
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
-    background-color: #F8F0E5;
+    /* background-color: #F8F0E5; */
     z-index: -2;
+    padding: 10px 0px;
 }
 
 .icoAbout a {
     text-decoration: none;
-    flex-shrink: 0;
-    gap: 20px;
     width: 25%;
     min-width: 150px;
 }
@@ -1460,24 +1633,27 @@ footer .copyright {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: calc(8px + 0.4vw);
     text-align: center;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 0px 5px rgba(61, 61, 61, 0.5);
+    /* background-color: rgb(255, 255, 255); */
+    /* box-shadow: 0px 1px 5px rgba(61, 61, 61, 0.5); */
     color: rgb(187, 109, 1);
     transition: 200ms ease-in-out;
 }
 
 .icoAbout div:hover {
-    background-image: linear-gradient(rgba(253, 232, 201, 0), rgb(253, 232, 201));
+    /* background-image: linear-gradient(rgba(253, 232, 201, 0), rgb(253, 232, 201)); */
     transition: 200ms ease-in-out;
+    color: rgb(44, 44, 44);
+    font-size: calc(9px + 0.4vw);
 }
 
 
 
 .active-icon div {
-    background-color: rgb(253, 232, 201);
-    border-bottom: 10px rgb(187, 109, 1) solid;
+    /* background-color: rgb(253, 232, 201); */
+    border-right: 2px rgb(187, 109, 1) solid;
+    font-weight: bold;
 }
 
 #Valeurs {
@@ -1679,12 +1855,14 @@ footer .copyright {
     animation: scroll 15s linear infinite;
     /* border: 1px black solid; */
 }
+
 .partenaires aside {
     height: 150px;
     width: calc(300px *5);
     /* border: 1px black solid; */
     overflow: hidden;
 }
+
 @keyframes scroll {
     to {
         transform: translateX(calc(-300px*5));
