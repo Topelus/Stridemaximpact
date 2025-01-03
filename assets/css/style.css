@@ -1312,7 +1312,8 @@ footer .copyright {
 
 .partenaires div span a {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -20px;
     text-decoration: none;
     color: rgb(44, 44, 44);
@@ -1386,7 +1387,7 @@ footer .copyright {
 }
 
 .Interv-ico a span {
-    font-size: 11px;
+    font-size: 10.5px;
     text-align: center;
 }
 
