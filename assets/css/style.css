@@ -218,6 +218,10 @@ header {
     height: 80vh;
     background-image: url('../images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving.webp');
 }
+.parralax-header.news{
+    height: 80vh;
+    background-image: url('../images/pexels-cottonbro-3944425.webp');
+}
 
 /* 
 .parralax-header.about::after {

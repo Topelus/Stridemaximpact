@@ -23,8 +23,8 @@ openMainMenus.forEach(mainMenu => {
 });
 
 
-const arrowleft = document.querySelector('.swipe.left');
-const arrowright = document.querySelector('.swipe.right');
+// const arrowleft = document.querySelector('.swipe.left');
+// const arrowright = document.querySelector('.swipe.right');
 
 var backgroundContainer = document.querySelector('.img_Interv');
 var images = [
