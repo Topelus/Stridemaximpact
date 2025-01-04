@@ -61,29 +61,36 @@ const texts = [
 
 
 var currentIndex = 0;
+var dots = document.querySelectorAll('.banndots span');
 
 function changeBackgroundImage() {
     // Change the background image
     backgroundContainer.style.backgroundImage = images[currentIndex];
     // Update the index, and loop back to the start if necessary
     banner.innerHTML = texts[currentIndex];
+
+
+
+    // Convertir en tableau pour utiliser forEach
+    dots.forEach((dot, indexs) => {
+        dot.classList.toggle("active_dot", indexs === currentIndex);
+    });
     currentIndex = (currentIndex + 1) % images.length;
 }
-// Initial call to set the first background image
-changeBackgroundImage();
-// Change the background every 10 seconds (10000 milliseconds)
-setInterval(changeBackgroundImage, 10000);
 
-var dots = document.querySelectorAll('.banndots span');
 
 // Convertir en tableau pour utiliser forEach
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         currentIndex = index;
         changeBackgroundImage();
-        console.log(index);
     });
 });
+
+// Initial call to set the first background image
+changeBackgroundImage();
+// Change the background every 10 seconds (10000 milliseconds)
+setInterval(changeBackgroundImage, 15000);
 
 // const loader = document.querySelector('.loader');
 // window.addEventListener('load', () => {
