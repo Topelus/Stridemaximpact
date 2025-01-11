@@ -571,110 +571,6 @@ section {
 
 /* fin section 1 */
 
-/* section services */
-.services {
-    display: flex;
-    flex-direction: column;
-}
-
-.services>div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.services h1 {
-    align-self: flex-end;
-}
-
-.boxservice {
-    width: calc(100%/3.1);
-    min-width: 250px;
-    height: 200px;
-    position: relative;
-    z-index: 0;
-    background-color: rgba(11, 67, 252, 0.05);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 5px;
-    box-sizing: border-box;
-    transition: 200ms ease-in-out;
-    cursor: pointer;
-}
-
-.boxservice:hover {
-    transform: scale(1.05, 1.05);
-    transition: 200ms ease-in-out;
-    background-color: rgb(187, 109, 1);
-    color: white;
-}
-
-.boxservice h2 {
-    font-size: 20px;
-}
-
-.boxservice:hover i {
-    background-color: white;
-    color: rgb(187, 109, 1);
-}
-
-.boxservice:hover span {
-    color: white !important;
-}
-
-.boxservice:hover a {
-    border: 1px white solid;
-    color: white;
-}
-
-.boxservice:hover::after {
-    border: 2px rgba(255, 255, 255) solid;
-}
-
-.boxservice::after {
-    content: "";
-    box-sizing: border-box;
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    border: 2px rgba(11, 67, 252, 0.2) solid;
-    z-index: -1;
-}
-
-.boxservice i {
-    padding: 10px;
-    color: white;
-    background-color: rgb(187, 109, 1);
-    border-radius: 50%;
-}
-
-.boxservice p {
-    text-align: center;
-    font-size: 13px;
-    padding: 0px 5px;
-}
-
-.boxservice a {
-    text-decoration: none;
-    padding: 3px 6px;
-    border: 1px rgb(187, 109, 1) solid;
-    color: rgb(187, 109, 1);
-    transition: 200ms ease-in-out;
-}
-
-.boxservice a:hover {
-    transform: scale(1.1, 1.1);
-    transition: 200ms ease-in-out;
-}
-
-/* fin section services */
 
 /* Section 2 */
 .about {
@@ -1115,6 +1011,7 @@ footer .copyright {
 .ourMVs li {
     text-align: justify;
     font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 
