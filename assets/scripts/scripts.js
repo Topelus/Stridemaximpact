@@ -44,19 +44,19 @@ var images = [
 ];
 const texts = [
     `<h1>Bienvenue à <span style="color: #186cfb;">Stride</span></h1>
-    <p>Architecte du progrès, nous embrassons la diversité en catalysant l'innovation pour bâtir un monde où chaque interaction crée une opportunité de croissance, de prospérité et de partage.</p>`,
+    <p>Architecte du progrès, nous embrassons la diversité en catalysant l'innovation pour bâtir un monde où chaque interaction crée une opportunité de croissance, de prospérité et de partage.</br></br><a href="#contact" class="ctaBann"> Commencez dès aujourd'hui <i class="fa fa-arrow-right"></i></a></p>`,
 
-    `<h1><span style="color:rgb(255, 255, 255);">Booster la croissance de votre entreprise</span></h1>
-    <p>Nous vous accompagnons avec des solutions sur mesure pour faire grandir votre PME et assurer sa pérennité. Ensemble, développons l'avenir de votre entreprise!</p>`,
+    `<h1>Booster la croissance de votre entreprise</h1>
+    <p>Nous vous accompagnons avec des solutions sur mesure pour faire grandir votre PME et assurer sa pérennité. Ensemble, développons l'avenir de votre entreprise!</br></br><a href="#contact" class="ctaBann"> Commencez dès aujourd'hui <i class="fa fa-arrow-right"></i></a></p>`,
 
-    `<h1><span style="color:rgb(255, 255, 255);">L'Excellence par la Connaissance</span></h1>
-    <p>Explorer de nouvelles perspectives à partir des études,recherches et formations approfondies pour être à la pointe de l'innovation et de la technologie.</p>`,
+    `<h1>L'Excellence par la Connaissance</h1>
+    <p>Explorer de nouvelles perspectives à partir des études,recherches et formations approfondies pour être à la pointe de l'innovation et de la technologie.</br></br><a href="#contact" class="ctaBann"> Commencez dès aujourd'hui <i class="fa fa-arrow-right"></i></a></p>`,
 
-    `<h1><span style="color:rgb(255, 255, 255);">Renforcer votre Leadership</span></h1>
-    <p>Optimiser la gouvernance et stimuler le management de votre organisation pour des performances accrues, basées sur les meilleures pratiques et un leadership fort.</p>`,
+    `<h1>Renforcer votre Leadership</h1>
+    <p>Optimiser la gouvernance et stimuler le management de votre organisation pour des performances accrues, basées sur les meilleures pratiques et un leadership fort.</br></br><a href="#contact" class="ctaBann"> Commencez dès aujourd'hui <i class="fa fa-arrow-right"></i></a></p>`,
 
-    `<h1><span style="color:rgb(255, 255, 255);">Connecter, Communiquer et Captiver</span></h1>
-    <p>Créer des connections fortes et des événements mémorables avec nos solutions intégrées en télécommunications et communication. Nous vous aidons à toucher votre audience de manière durable et percutante.</p>`,
+    `<h1>Connecter, Communiquer et Captiver</h1>
+    <p>Créer des connections fortes et des événements mémorables avec nos solutions intégrées en télécommunications et communication. Nous vous aidons à toucher votre audience de manière durable et percutante.</br></br><a href="#contact" class="ctaBann"> Commencez dès aujourd'hui <i class="fa fa-arrow-right"></i></a></p>`,
 ];
 
 

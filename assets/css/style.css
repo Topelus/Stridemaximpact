@@ -135,25 +135,21 @@ header {
     }
 }
 
-/* .parralax-header .backdrop .ctaBann {
-    position: absolute;
+.parralax-header .backdrop .ctaBann {
     text-decoration: none;
     color: white;
-    padding: 10px 20px;
-    border: 2px white solid;
+    padding: 5px;
     transition: 200ms ease-in-out;
     box-sizing: border-box;
-    left: 30px;
-    bottom: 100px;
     white-space: nowrap;
-    margin-left: 10%;
-} */
+    font-size: medium;
+}
 
-/* .parralax-header .backdrop .ctaBann:hover {
+.parralax-header .backdrop .ctaBann:hover {
     background-color: white;
     color: black;
     transition: 200ms ease-in-out;
-} */
+}
 
 .parralax-header .banndots {
     position: absolute;
@@ -171,7 +167,7 @@ header {
     width: 10px;
     height: 10px;
     background-color: rgb(255, 255, 255);
-    border-radius: 50%;
+    border-radius: 5px;
     cursor: pointer;
     transition: 200ms ease-in-out;
 }
@@ -179,12 +175,11 @@ header {
 .parralax-header .banndots span:hover {
     width: 15px;
     transition: 200ms ease-in-out;
-    border-radius: 5px;
 }
-.active_dot{
-    width: 20px !important;
+
+.active_dot {
+    height: 20px !important;
     transition: 200ms ease-in-out;
-    border-radius: 5px !important;
 }
 
 .parralax-header .fa-arrow-down {
@@ -218,7 +213,8 @@ header {
     height: 80vh;
     background-image: url('../images/male-psychologist-taking-notes-couple-therapy-session-help-with-relationship-issues-counselor-giving.webp');
 }
-.parralax-header.news{
+
+.parralax-header.news {
     height: 80vh;
     background-image: url('../images/pexels-cottonbro-3944425.webp');
 }
@@ -405,8 +401,8 @@ header {
 }
 
 .moove_menu>a {
-    background-color: rgb(187, 109, 1);
-    border: 2px rgb(187, 109, 1) solid;
+    background-color: rgb(255, 145, 0);
+    border: 2px rgb(255, 145, 0) solid;
     padding: 8px 15px;
     border-radius: 10px;
     transition: 200ms ease-in-out;
@@ -818,6 +814,17 @@ section {
     align-items: center;
     flex-direction: column;
 }
+.contact-form form select {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    font-size: 1.1rem;
+    outline: none;
+    border-bottom: 2px black solid;
+}
 
 .contact .name {
     display: flex;
@@ -933,19 +940,20 @@ footer .logo-stride svg {
     border: 1px black solid !important;
 } */
 ²footer .foot .logofoot {
-    justify-content:flex-start ;
+    justify-content: flex-start;
 }
-.logofoot p{
+
+.logofoot p {
     font-size: calc(8px + 1vw);
     width: 100%;
 }
 
 
-footer .follow-us{
+footer .follow-us {
     gap: 50px;
     display: flex;
     align-items: center;
-    justify-content:flex-end;
+    justify-content: flex-end;
     width: 100%;
     margin-top: 30px;
 }
@@ -961,7 +969,7 @@ footer .follow-us{
     font-size: 1.3em;
 }
 
-footer .nav-links{
+footer .nav-links {
     margin-top: 30px;
     width: 100%;
     padding: 0px 80px;
@@ -975,43 +983,55 @@ footer .nav-links ul {
     flex-wrap: wrap;
     gap: 15px;
 }
-footer .nav-links ul li{
+
+footer .nav-links ul li {
     padding: 5px;
 }
 
-footer .nav-links ul li a:hover{
+footer .nav-links ul li a:hover {
     color: rgb(187, 109, 1);
     transition: 200ms ease-in-out;
     position: relative;
 }
+
 footer a {
     list-style-type: none;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-.newsletter{
+.newsletter {
     width: 40%;
     flex-shrink: 0;
 }
 
-.newsletter form{
+.newsletter form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.newsletter form input{
+
+.newsletter form input {
     width: 100%;
     height: 50px;
     outline: none;
 }
-.newsletter form button{
+
+.newsletter form button {
     width: 40%;
     height: 50px;
     outline: none;
     border: none;
     background-color: rgb(187, 109, 1);
     color: white;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.newsletter form button:hover {
+    background-color: white;
+    color: rgb(187, 109, 1);
+    transition: 200ms ease-in-out;
 }
 
 
@@ -1156,6 +1176,11 @@ footer .copyright {
     /* z-index: -10; */
 }
 
+.about .valeursBox:hover div {
+    animation-play-state: paused;
+}
+
+
 .about .valeursBox div {
     height: 400px;
     width: 400px;
@@ -1166,15 +1191,15 @@ footer .copyright {
     align-items: center;
     flex-direction: column;
     color: white;
-    background-image: radial-gradient(rgb(233, 137, 2), rgb(187, 109, 1));
+    background-image: radial-gradient(#186cfb, #1ab9ff);
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
-    /* border: 1px white solid; */
 }
 
 .about .valeursBox div:hover {
-    background-image: linear-gradient(rgb(233, 137, 2), rgb(233, 137, 2));
+    /* background-image: linear-gradient(rgb(233, 137, 2), rgb(233, 137, 2)); */
+    background-image: linear-gradient(rgb(255, 145, 0), rgb(255, 145, 0));
 }
 
 .about .valeursBox div span {
@@ -1186,12 +1211,13 @@ footer .copyright {
     text-align: center;
     box-sizing: border-box;
     z-index: 1;
-    background-color: rgb(233, 137, 2);
 }
 
 .valeursBox div:hover span {
     opacity: 1 !important;
     transition: 300ms ease-out;
+    z-index: 10;
+    animation: none;
 }
 
 .about .valeursBox div svg {
@@ -1205,6 +1231,8 @@ footer .copyright {
     text-align: left;
     border-radius: 100% 0% 0% 0%;
     transition: 300ms ease-out;
+    /* animation: rotation 15s linear infinite; */
+    transform-origin: bottom right;
 }
 
 .valeursBox div:nth-child(1) span {
@@ -1220,6 +1248,7 @@ footer .copyright {
     padding: 0px 30px;
     transition: 300ms ease-out;
     opacity: 0;
+    background-color: rgb(255, 145, 0);
 }
 
 .valeursBox div:nth-child(2) {
@@ -1227,6 +1256,8 @@ footer .copyright {
     right: 0;
     border-radius: 0% 100% 0% 0%;
     transition: 300ms ease-out;
+    /* animation: rotation 15s linear infinite; */
+    transform-origin: bottom left;
 }
 
 .valeursBox div:nth-child(2) span {
@@ -1242,7 +1273,7 @@ footer .copyright {
     border-radius: 50%;
     padding: 0px 30px;
     transition: 300ms ease-out;
-    background-color: rgb(233, 137, 2);
+    background-color: rgb(255, 145, 0);
     opacity: 0;
 }
 
@@ -1251,6 +1282,8 @@ footer .copyright {
     left: 0;
     border-radius: 0% 0% 0% 100%;
     transition: 300ms ease-out;
+    /* animation: rotation 15s linear infinite; */
+    transform-origin: top right;
 }
 
 .valeursBox div:nth-child(3) span {
@@ -1264,7 +1297,7 @@ footer .copyright {
     align-items: center;
     border-radius: 50%;
     padding: 0px 30px;
-    background-color: rgb(233, 137, 2);
+    background-color: rgb(255, 145, 0);
     transition: 300ms ease-out;
     opacity: 0;
 }
@@ -1274,13 +1307,14 @@ footer .copyright {
     right: 0;
     border-radius: 0% 0% 100% 0%;
     transition: 300ms ease-out;
+    /* animation: rotation 15s linear infinite; */
+    transform-origin: top left;
 }
 
 .valeursBox div:nth-child(4) span {
     position: absolute;
     width: 400px;
     height: 400px;
-    background-color: rgba(127, 255, 212, 0);
     left: -50%;
     top: -50%;
     display: flex;
@@ -1288,7 +1322,7 @@ footer .copyright {
     align-items: center;
     border-radius: 50%;
     padding: 0px 30px;
-    background-color: rgb(233, 137, 2);
+    background-color: rgb(255, 145, 0);
     transition: 300ms ease-out;
     opacity: 0;
 }
@@ -1304,6 +1338,7 @@ footer .copyright {
     border-radius: 50%;
     z-index: 0;
     text-align: center;
+    /* opacity: 0; */
 }
 
 .valeursBox div:nth-child(5)::after {
@@ -1318,6 +1353,12 @@ footer .copyright {
 .valeursBox div:nth-child(5) span {
     display: flex;
     background-color: rgba(233, 137, 2, 0);
+}
+
+@keyframes rotation {
+    to {
+        transform: rotateZ(360deg);
+    }
 }
 
 
@@ -1348,14 +1389,14 @@ footer .copyright {
 
 .partenaires aside {
     height: 150px;
-    width: calc(300px *5);
+    width: calc(300px *7);
     /* border: 1px black solid; */
     overflow: hidden;
 }
 
 @keyframes scroll {
     to {
-        transform: translateX(calc(-300px*5));
+        transform: translateX(calc(-300px*7));
     }
 }
 
@@ -1385,11 +1426,126 @@ footer .copyright {
     color: rgb(44, 44, 44);
     font-size: calc(13px);
     transition: 100ms ease-in-out;
+    transition: 200ms ease;
 }
 
 .partenaires div span a:hover {
     color: rgb(187, 109, 1);
     font-size: calc(14px);
+}
+.partenaires div span a:hover i{
+    transform: rotateZ(90deg);
+    transition: 200ms ease;
+}
+.info-box {
+    /* display: none; */
+    /* background: #007bff; */
+    color: #000000;
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    /* opacity: 0; */
+    transition: opacity 0.3s ease;
+}
+/* 
+.info-box.active {
+    display: block;
+    opacity: 1;
+} */
+
+
+
+
+
+
+#Team{
+    flex-direction: column;
+}
+#expertise h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#Team .intro {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.expertise-item {
+    background: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-item h3 {
+    font-size: 1.5em;
+    color: rgb(187, 109, 1);
+    margin-bottom: 10px;
+}
+
+.expertise-item p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+            
+.filter-container {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.filter-container label{
+    border: 2px rgb(187, 109, 1) solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.filter-container label i {
+    font-size: 25px;
+    color: rgb(187, 109, 1);
+}
+.filter-container select {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-bottom: 2px rgb(187, 109, 1) solid;
+    background-color: #33333300;
+    color: rgb(187, 109, 1);
+    font-weight: bold;
+}
+
+
+.item {
+    display: none; /* Masqué par défaut */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 /* Fin page about */
@@ -1567,6 +1723,27 @@ footer .copyright {
     border: none;
 }
 
+.contact-CTA select {
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+
+.contact-CTA select option {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: calc(2px + O.2vw);
+}
+
+.contact-CTA select option:hover {
+    background-color: rgb(187, 109, 1);
+    transition: 200ms ease-in-out;
+}
 
 .contact-CTA input[type="submit"] {
     background-color: rgb(187, 109, 1);
@@ -1587,6 +1764,11 @@ footer .copyright {
 
 /* media queries */
 @media (max-width:1295px) {
+    .active_dot {
+        width: 20px !important;
+        height: 10px !important;
+    }
+
     section {
         padding: 30px 80px;
     }
@@ -1605,6 +1787,7 @@ footer .copyright {
 }
 
 @media (max-width:1036px) {
+
 
     .menu {
         position: relative;
@@ -1966,10 +2149,12 @@ footer .copyright {
         align-items: center;
     }
 
+
     .parralax-header .banntext {
         width: 90%;
         transform: none;
         margin: 0;
+        transform: translateY(-70px);
     }
 
     .parralax-header .banntext h1 {
@@ -2100,13 +2285,16 @@ footer .copyright {
         flex-direction: column;
         gap: 30px;
     }
-    footer .follow-us{
-        justify-content:center;
+
+    footer .follow-us {
+        justify-content: center;
     }
+
     footer .foot>div {
         width: 100%;
     }
-    .logofoot p{
+
+    .logofoot p {
         font-size: calc(15px + 1vw);
         width: 100%;
     }

@@ -18,7 +18,7 @@ function showSection() {
             section.classList.add('active-section');
         }
 
-        const lien = document.querySelector(`a[href="${sectionToShow}"]`); 
+        const lien = document.querySelector(`a[href="${sectionToShow}"]`);
 
         // Vérifier si le lien a été trouvé et agir
         if (lien) {
@@ -49,4 +49,51 @@ openMainMenus.forEach(mainMenu => {
         }
     });
 });
+
+
+const partners = document.querySelectorAll(".partenaires span");
+partners.forEach((partner) => {
+    const link = partner.querySelector("a");
+    const infoBox = document.querySelector(".info-box");
+
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+
+
+        // Affiche le texte dans la boîte
+        infoBox.textContent = link.getAttribute("data-text");
+        console.log(link.getAttribute("data-text"));
+        setTimeout(() => {
+            infoBox.textContent = "";
+        }, 5000);
+    });
+});
+
+
+
+
+
+
+
+
+// Récupérer le menu déroulant et les éléments
+const filter = document.getElementById('filter');
+const items = document.querySelectorAll('.expertise-item');
+
+// Ajouter un écouteur d'événement pour le changement de sélection
+filter.addEventListener('change', () => {
+    const category = filter.value;
+
+    // Parcourir les éléments et appliquer le filtre
+    items.forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block'; // Afficher l'élément
+        } else {
+            item.style.display = 'none'; // Masquer l'élément
+        }
+    });
+});
+
+// Afficher tous les éléments par défaut
+filter.dispatchEvent(new Event('change'));
 
