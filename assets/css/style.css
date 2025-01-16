@@ -230,11 +230,13 @@ header {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-} 
+}
+
 .parralax-header.legal {
     height: calc(7.5em + 30px);
-    box-shadow:none;
+    box-shadow: none;
 }
+
 .parralax-header.legal .backdrop {
     backdrop-filter: brightness(100%);
     -webkit-backdrop-filter: brightness(100%);
@@ -258,31 +260,39 @@ header {
     top: 0;
     left: 0;
 }
-.otlegals .top-navbar{
+
+.otlegals .top-navbar {
     border-bottom: 1px black solid;
     background-color: #ffffff;
 }
-.otlegals .top-navbar ul a{
+
+.otlegals .top-navbar ul a {
     color: #000000;
 }
-.otlegals .logo-stride svg{
+
+.otlegals .logo-stride svg {
     color: #000000;
 }
-.otlegals .moove_menu li{
+
+.otlegals .moove_menu li {
     color: #000000;
 }
+
 .otlegals .moove_menu .main-menus {
-    color:#000000;
+    color: #000000;
 }
+
 .otlegals .main-navbar {
     border-bottom: 1px black solid;
     background-color: #ffffff;
 }
+
 .otlegals .moove_menu>a {
     background-color: rgb(0, 0, 0);
     border: 2px rgb(0, 0, 0) solid;
     color: white;
 }
+
 .otlegals .moove_menu>a:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -739,6 +749,7 @@ section {
     align-items: center;
     flex-direction: column;
 }
+
 .contact-form form select {
     width: 100%;
     height: 50px;
@@ -1359,10 +1370,12 @@ footer .copyright {
     color: rgb(187, 109, 1);
     font-size: calc(14px);
 }
-.partenaires div span a:hover i{
+
+.partenaires div span a:hover i {
     transform: rotateZ(90deg);
     transition: 200ms ease;
 }
+
 .info-box {
     /* display: none; */
     /* background: #007bff; */
@@ -1374,6 +1387,7 @@ footer .copyright {
     /* opacity: 0; */
     transition: opacity 0.3s ease;
 }
+
 /* 
 .info-box.active {
     display: block;
@@ -1385,9 +1399,10 @@ footer .copyright {
 
 
 
-#Team{
+#Team {
     flex-direction: column;
 }
+
 #expertise h2 {
     font-size: 2.5em;
     color: #333;
@@ -1431,7 +1446,7 @@ footer .copyright {
     line-height: 1.6;
 }
 
-            
+
 .filter-container {
     margin-bottom: 20px;
     width: 100%;
@@ -1439,7 +1454,8 @@ footer .copyright {
     gap: 20px;
     align-items: center;
 }
-.filter-container label{
+
+.filter-container label {
     border: 2px rgb(187, 109, 1) solid;
     border-radius: 5px;
     width: 50px;
@@ -1449,10 +1465,12 @@ footer .copyright {
     align-items: center;
     box-sizing: border-box;
 }
+
 .filter-container label i {
     font-size: 25px;
     color: rgb(187, 109, 1);
 }
+
 .filter-container select {
     width: 100%;
     height: 50px;
@@ -1467,7 +1485,8 @@ footer .copyright {
 
 
 .item {
-    display: none; /* Masqué par défaut */
+    display: none;
+    /* Masqué par défaut */
     margin: 10px 0;
     padding: 10px;
     border: 1px solid #ccc;
@@ -1657,6 +1676,7 @@ footer .copyright {
     height: 50px;
     outline: none;
     border: none;
+    color: #555;
 }
 
 .contact-CTA select option {
@@ -1778,6 +1798,7 @@ footer .copyright {
         border-radius: 4px;
         transition: 500ms ease-in-out;
     }
+
     .otlegals .menu .openMenu span {
         background-color: rgb(0, 0, 0);
     }
@@ -1882,7 +1903,8 @@ footer .copyright {
     .about .container {
         margin: 20px 20px;
     }
-    .callToAtion .actionText{
+
+    .callToAtion .actionText {
         right: 0px !important;
         top: 15% !important;
         display: flex;
@@ -1890,6 +1912,7 @@ footer .copyright {
         justify-content: center;
         align-items: center;
     }
+
     .callToAtion p {
         text-align: center;
         font-weight: bold;
@@ -1902,7 +1925,7 @@ footer .copyright {
         left: 50%;
         transform: translateX(-50%);
     }
-    
+
 
 
     /* Page about */
@@ -2214,17 +2237,35 @@ footer .copyright {
     .blog {
         flex-direction: column;
     }
+
     .blog-categories {
-        flex-direction: row !important;
         width: 100%;
         margin-bottom: 20px;
         width: 100% !important;
         overflow: hidden;
         box-sizing: border-box;
         align-items: center;
+        position: relative;
     }
-    .blog-categories div{
+
+    .blog-categories div {
         flex-direction: row !important;
+        width: 100%;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        width: 100% !important;
+    }
+    .category-btn {
+        border: 1px #555 solid !important;
+        border-radius: 2px;
+    }
+    .category-btn.active {
+        /* background-color: rgb(187, 109, 1);*/
+        color: rgb(255, 255, 255) !important;
+        border-left: 5px rgb(187, 109, 1) solid;
+        border: 1px rgb(187, 109, 1) solid !important;
+        background-color: rgb(187, 109, 1);
     }
 
     /* Fin Blog */
