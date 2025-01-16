@@ -146,8 +146,8 @@ header {
 }
 
 .parralax-header .backdrop .ctaBann:hover {
-    background-color: white;
-    color: black;
+    color: rgb(255, 145, 0);
+    text-shadow: 1px 1px 3px rgb(255, 145, 0);
     transition: 200ms ease-in-out;
 }
 
@@ -215,23 +215,30 @@ header {
 }
 
 .parralax-header.news {
-    height: 80vh;
-    background-image: url('../images/pexels-cottonbro-3944425.webp');
+    height: 50vh;
+    background-image: url('../images/pexels-brotin-biswas-158640-518543.webp');
 }
 
-/* 
-.parralax-header.about::after {
-    content: "A Propos";
+.parralax-header.news::after {
+    content: "-Blog";
     white-space: nowrap;
     color: white;
-    font-size: calc(30px + 5vw);
+    font-size: calc(8em - 50px);
     font-weight: bold;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.781);
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+} 
+.parralax-header.legal {
+    height: calc(7.5em + 30px);
+    box-shadow:none;
+}
+.parralax-header.legal .backdrop {
+    backdrop-filter: brightness(100%);
+    -webkit-backdrop-filter: brightness(100%);
+}
 
 
 #navigation {
@@ -250,6 +257,35 @@ header {
     width: 100%;
     top: 0;
     left: 0;
+}
+.otlegals .top-navbar{
+    border-bottom: 1px black solid;
+    background-color: #ffffff;
+}
+.otlegals .top-navbar ul a{
+    color: #000000;
+}
+.otlegals .logo-stride svg{
+    color: #000000;
+}
+.otlegals .moove_menu li{
+    color: #000000;
+}
+.otlegals .moove_menu .main-menus {
+    color:#000000;
+}
+.otlegals .main-navbar {
+    border-bottom: 1px black solid;
+    background-color: #ffffff;
+}
+.otlegals .moove_menu>a {
+    background-color: rgb(0, 0, 0);
+    border: 2px rgb(0, 0, 0) solid;
+    color: white;
+}
+.otlegals .moove_menu>a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -284,7 +320,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(187, 109, 1, 0.5);
+    /* background-color: rgba(187, 109, 1, 0.5); */
     padding: 10px;
 }
 
@@ -305,8 +341,7 @@ header {
 
 .top-navbar ul a:hover {
     cursor: pointer;
-
-    color: white;
+    color: #666;
 }
 
 .main-navbar {
@@ -324,11 +359,6 @@ header {
     color: white;
     transition: 200ms ease-in;
 }
-
-/* .scrolled .logo-stride svg {
-    color: rgb(187, 109, 1);
-    transition: 200ms ease-in;
-} */
 
 
 .menu {
@@ -612,7 +642,6 @@ section {
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
-    line-height: 80%;
 }
 
 .callToAtion .colored {
@@ -1749,6 +1778,9 @@ footer .copyright {
         border-radius: 4px;
         transition: 500ms ease-in-out;
     }
+    .otlegals .menu .openMenu span {
+        background-color: rgb(0, 0, 0);
+    }
 
     .openMenu span:nth-child(1) {
         align-self: flex-start;
@@ -1798,7 +1830,7 @@ footer .copyright {
         width: 100%;
         height: 100vh;
         right: -100%;
-        background-color: rgba(0, 7, 32, 0.8);
+        /* background-color: rgba(0, 7, 32, 0.8); */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1850,11 +1882,27 @@ footer .copyright {
     .about .container {
         margin: 20px 20px;
     }
+    .callToAtion .actionText{
+        right: 0px !important;
+        top: 15% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .callToAtion p {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+    }
 
     .callToAtion .button {
         bottom: 20px;
-        left: 30px;
+        left: 50%;
+        transform: translateX(-50%);
     }
+    
 
 
     /* Page about */
@@ -2161,6 +2209,25 @@ footer .copyright {
     .interventions ul {
         font-size: calc(15px + 0.5vw) !important;
     }
+
+    /* Blog */
+    .blog {
+        flex-direction: column;
+    }
+    .blog-categories {
+        flex-direction: row !important;
+        width: 100%;
+        margin-bottom: 20px;
+        width: 100% !important;
+        overflow: hidden;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .blog-categories div{
+        flex-direction: row !important;
+    }
+
+    /* Fin Blog */
 
 
 
