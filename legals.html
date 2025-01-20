@@ -12,6 +12,8 @@
     <!-- custom css links -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/cookiebanner.style.css" type="text/css">
     <title>STRIDE | Accompagnement pour la croissance des PMEs</title>
 
 </head>
@@ -239,6 +241,7 @@
         <div class="foot">
             <div class="logofoot">
                 <div class="logo-stride">
+                    <!-- <img src="assets/images/logo-stride-c.png" alt="" srcset=""> -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 518.24 183.11" fill="currentColor">
                         <defs>
                             <style>
@@ -296,19 +299,24 @@
                     Nous nous engageons à accompagner nos clients avec expertise et passion, en proposant des solutions
                     adaptées à leurs besoins pour bâtir un avenir durable et prospère.
                 </p>
+
             </div>
 
             <div class="newsletter">
                 <h1>Abonnez-vous à notre newsletter</h1>
-                <form>
-                    <input type="email" placeholder="Entrez votre email" required>
+                <form id="newsletterForm">
+                    <input type="email" id="nl_email" name="nl_email" placeholder="Entrez votre email" required>
+                    <div>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">J'accepte de recevoir des emails de la part de votre site.</label>
+                    </div>
                     <button type="submit">S'abonner</button>
                 </form>
                 <div class="follow-us">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a> -->
                     <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
+                    <!-- <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a> -->
                 </div>
             </div>
         </div>
@@ -324,7 +332,15 @@
         </div>
         <div class="copyright">Copyright Stridemaximpact | Tous droits réservés</div>
     </footer>
+    
+<script>
+    $(document).ready(function() {
+        cookieBanner.init();
+    });
+</script>
 </body>
+<script src="assets/scripts/cookiebanner.script.js"></script>
+<script src="assets/scripts/newsletter.js"></script>
 <script src="assets/scripts/legals.js"></script>
 
 </html>
