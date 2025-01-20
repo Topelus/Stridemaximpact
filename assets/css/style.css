@@ -19,10 +19,10 @@ html {
     align-items: center;
 } */
 
-.loader-out {
+/* .loader-out {
     transform: translateY(-100%);
     transition: 500ms ease-in-out;
-}
+} */
 
 body {
 
@@ -138,11 +138,11 @@ header {
 .parralax-header .backdrop .ctaBann {
     text-decoration: none;
     color: white;
-    padding: 5px;
+    padding: 5px 0px;
     transition: 200ms ease-in-out;
     box-sizing: border-box;
     white-space: nowrap;
-    font-size: medium;
+    font-size: calc(5px + 1.1vw);
 }
 
 .parralax-header .backdrop .ctaBann:hover {
@@ -262,7 +262,7 @@ header {
 }
 
 .otlegals .top-navbar {
-    border-bottom: 1px black solid;
+    /* border-bottom: 1px black solid; */
     background-color: #ffffff;
 }
 
@@ -1715,10 +1715,7 @@ footer .copyright {
 
 /* media queries */
 @media (max-width:1295px) {
-    .active_dot {
-        width: 20px !important;
-        height: 10px !important;
-    }
+    
 
     section {
         padding: 30px 80px;
@@ -1739,6 +1736,10 @@ footer .copyright {
 
 @media (max-width:1036px) {
 
+    .active_dot {
+        width: 20px !important;
+        height: 10px !important;
+    }
 
     .menu {
         position: relative;
@@ -2140,6 +2141,7 @@ footer .copyright {
         left: 50%;
         transform: translateX(-50%);
         margin: 0;
+        font-size: calc(10px + 1.2vw);
     }
 
     .parralax-header .banndots {
