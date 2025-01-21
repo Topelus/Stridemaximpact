@@ -39,7 +39,7 @@
                 </div>
                 <div class="contacts-links">
                     <ul>
-                        <li><a href=""><i class="fa fa-envelope"></i> contact@stridemaximpact.com</a></li>
+                        <li><a href="mailto:contact@stridemaximpact.com"><i class="fa fa-envelope"></i> contact@stridemaximpact.com</a></li>
                         <li><a href=""><i class="fa fa-phone"></i> +229 90017765</a></li>
                     </ul>
                 </div>
@@ -596,23 +596,25 @@
             </section>
 
             <section class="contact-CTA">
-                <form action="">
+                <form action="" id="demandeForm">
                     <div>
                         <h2>Une question ? Un projet ? Contactez-nous dès maintenant et laissez-nous vous
                             accompagner vers le succès !</h2>
                         <h3>Nous sommes à votre écoute pour répondre à vos besoins et vous offrir des solutions
                             adaptées.</h3>
-                        <select name="" id="">
-                            <option value="">Choissisez un domaine d'intervention</option>
-                            <option value="">Dévelopement de PMEs</option>
-                            <option value="">Etudes recherches et formation</option>
-                            <option value="">Gouvernance, management et leadership</option>
-                            <option value="">Télécommunications, communication et évènementiel</option>
+                        <select id="domaine" name="domaine" required>
+                            <option value="">Choisissez un domaine d'intervention</option>
+                        <option value="Dévelopement de PMEs">Dévelopement de PMEs</option>
+                        <option value="Etudes recherches et formation">Etudes recherches et formation</option>
+                        <option value="Gouvernance, management et leadership">Gouvernance, management et leadership
+                        </option>
+                        <option value="Télécommunications, communication et évènementiel">Télécommunications,
+                            communication et évènementiel</option>
                         </select>
                     </div>
                     <div>
-                        <input type="text" id="name" name="user_name" placeholder="Adresse email">
-                        <textarea name="" id="" placeholder="Message"></textarea>
+                        <input type="email" id="email" name="email" placeholder="Adresse email" required>
+                        <textarea  name="message" id="message" placeholder="Message" required></textarea>
                         <input type="submit" value="Envoyer">
                     </div>
                 </form>
@@ -725,6 +727,7 @@
     <script src="assets/scripts/cookiebanner.script.js"></script>
     <script src="assets/scripts/newsletter.js"></script>
     <script src="assets/scripts/about.js"></script>
+    <script src="assets/scripts/demande.js"></script>
 </body>
 
 </html>

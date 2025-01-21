@@ -1,0 +1,117 @@
+.recrut_container {
+    line-height: 2;
+    margin-top: 20px;
+}
+.img-banner{
+    width: 100%;
+    height: 500px;
+    border-top: #ff9100 5px solid;
+    background-image: url("close-up-hand-with-magnifying-glass-_1_.webp");
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.recrut_container h1 {
+    text-align: center;
+    /* border-bottom: 1px #555 solid; */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.recrut_container h5 {
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.recrut_container p {
+    font-size: 1.4rem;
+}
+
+.recrut_container ul li {
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* Formulaire */
+form#recruitmentForm {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+form#recruitmentForm label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form#recruitmentForm input,
+form#recruitmentForm select,
+form#recruitmentForm textarea,
+form#recruitmentForm button {
+    width: 100% !important;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#telephone {
+    padding-left: 50px !important;
+}
+
+.iti {
+    width: 100%;
+    /* Étendre le conteneur intl-tel-input */
+}
+
+.iti__flag-container {
+    width: auto;
+    /* Préserve les drapeaux sans les étirer */
+}
+
+form#recruitmentForm input:focus,
+form#recruitmentForm select:focus,
+form#recruitmentForm textarea:focus {
+    border-color: #bb6d01;
+    outline: none;
+}
+
+form#recruitmentForm button {
+    background-color: #bb6d01;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form#recruitmentForm button:hover {
+    background-color: #ff9100;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    form input,
+    form select,
+    form textarea,
+    form button {
+        font-size: 14px;
+    }
+}
