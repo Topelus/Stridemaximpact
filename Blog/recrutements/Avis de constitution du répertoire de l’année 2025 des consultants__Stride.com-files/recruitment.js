@@ -10,6 +10,71 @@ const iti = window.intlTelInput(telephoneInput, {
 });
 
 
+const specialitesParDomaine = {
+    Economie: [
+      "Expert Économiste du développement",
+      "Expert Économiste de la Santé / santé publique",
+      "Expert en finances (durable et locale)",
+      "Expert Statisticien en évaluation d’impact",
+      "Expert Statisticien en études statistiques et enquêtes",
+      "Expert Économiste spécialisé en évaluation d’impact",
+      "Expert Planificateur en évaluations de politiques publiques",
+      "Expert agronome"
+    ],
+    Social: [
+      "Expert sociologue en dynamiques sociales et protection sociale",
+      "Expert sociologue du développement",
+      "Expert Sociologue spécialisé en évaluation d’impact",
+      "Expert anthropologue",
+      "Expert démographe",
+      "Expert éducateur/Spécialiste en politiques éducatives",
+      "Expert en politiques culturelles",
+      "Expert historien",
+      "Expert en Santé publique/épidémiologiste",
+      "Expert/Coach en Entreprenariat et accompagnement des AGR"
+    ],
+    Environnement: [
+      "Expert en changement climatique",
+      "Expert géographe aménagiste",
+      "Expert Économiste de l’environnement"
+    ],
+    Gouvernance: [
+      "Expert en Gouvernance publique / gouvernance de l’Administration publique",
+      "Expert analyste géopolitique et géostratégique",
+      "Expert politologue",
+      "Expert en diplomatie",
+      "Expert en sécurité (cybercriminalité, terrorisme, etc)"
+    ],
+    Finances_publiques: [
+      "Expert en finances publiques avec des expériences en politique fiscale",
+      "Expert en finances publiques avec des expériences en investissements cases"
+    ]
+  };
+
+  const domainesSelect = document.getElementById("domaine");
+  const specialitesSelect = document.getElementById("specialites");
+
+  domainesSelect.addEventListener("change", () => {
+    const domaineChoisi = domainesSelect.value;
+    specialitesSelect.innerHTML = '<option value="">--Sélectionnez une spécialité--</option>';
+    specialitesSelect.disabled = !domaineChoisi;
+
+    if (domaineChoisi) {
+      const specialites = specialitesParDomaine[domaineChoisi];
+      specialites.forEach(specialite => {
+        const option = document.createElement("option");
+        option.value = specialite;
+        option.textContent = specialite;
+        specialitesSelect.appendChild(option);
+      });
+    }
+  });
+
+
+
+
+
+
 // Affichage du champ "Autres" si nécessaire
 document.getElementById("diplome").addEventListener("change", function () {
     const autreDiplomeField = document.getElementById("autreDiplome");
