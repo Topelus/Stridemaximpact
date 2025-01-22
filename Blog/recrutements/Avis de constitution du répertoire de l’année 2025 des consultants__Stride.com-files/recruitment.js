@@ -4,22 +4,28 @@ const recruitmentForm = document.getElementById("recruitmentForm");
 // Charger le plugin intl-tel-input sur l'input de téléphone
 const telephoneInput = document.getElementById("telephone");
 const iti = window.intlTelInput(telephoneInput, {
-    // initialCountry: "auto", // Détecte automatiquement le pays de l'utilisateur
-    // geoIpLookup: (callback) => {
-    //     fetch("https://ipinfo.io?token=YOUR_IPINFO_TOKEN") // Remplacez avec un token valide
-    //         .then((response) => response.json())
-    //         .then((data) => callback(data.country))
-    //         .catch(() => callback("us"));
-    // },
+
     utilsScript:
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.min.js", // Nécessaire pour les fonctionnalités avancées
 });
 
-// const phoneInputField = document.querySelector("#telephone");
-// const phoneInput = window.intlTelInput(phoneInputField, {
-//   utilsScript:
-//     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-// });
+
+// Affichage du champ "Autres" si nécessaire
+document.getElementById("diplome").addEventListener("change", function () {
+    const autreDiplomeField = document.getElementById("autreDiplome");
+    if (this.value === "AUTRES") {
+        autreDiplomeField.style.display = "flex";
+        autreDiplomeField.setAttribute("required", "required");
+    } else {
+        autreDiplomeField.style.display = "none";
+        autreDiplomeField.removeAttribute("required");
+    }
+});
+
+
+const autreDiplome = document.getElementById("autreDiplome").value; // Champ "Autres"
+// Gestion des diplômes : vérifier si "AUTRES" est sélectionné
+let diplomeFinal = diplome === "AUTRES" ? autreDiplome : diplome;
 
 // Écouter l'événement de soumission
 recruitmentForm.addEventListener("submit", function (e) {
@@ -47,3 +53,4 @@ recruitmentForm.addEventListener("submit", function (e) {
             alert("Une erreur est survenue lors de l'enregistrement.");
         });
 });
+

@@ -15,7 +15,9 @@
     <link rel="shortcut icon" href="../../assets/images/favicon_io/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../../assets/css/cookiebanner.style.css" type="text/css">
-    <link rel="stylesheet" href="Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/style_r.css" type="text/css">
+    <link rel="stylesheet"
+        href="Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/style_r.css"
+        type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com</title>
@@ -43,7 +45,8 @@
                 </div>
                 <div class="contacts-links">
                     <ul>
-                        <li><a href="mailto:contact@stridemaximpact.com"><i class="fa fa-envelope"></i> contact@stridemaximpact.com</a></li>
+                        <li><a href="mailto:contact@stridemaximpact.com"><i class="fa fa-envelope"></i>
+                                contact@stridemaximpact.com</a></li>
                         <li><a href=""><i class="fa fa-phone"></i> +229 90017765</a></li>
                     </ul>
                 </div>
@@ -149,21 +152,20 @@
     </header>
     <div id="bloc_page">
         <section class="recrut_container">
-            <h1>Avis de constitution du répertoire de l’année 2025<br> des consultants</h1>
+            <h1> Avis de constitution du répertoire des consultants<br>de STRIDE pour l'année 2025</h1>
             <h5>-Avis de recrutement-</h5>
             <div class="img-banner"></div>
-            <p>Nous recherchons des experts voulant collaborer avec notre entreprise pour être compétitive sur les
-                dossiers d’appels d’offres nationaux et internationaux ainsi que sur nos offres de services dans les
-                domaines ci-après:</p>
+            <p>Nous recherchons des experts qui souhaiteraient collaborer avec nous en 2025 dans les domaines ci-après
+            </p>
             <ul>
                 <li>Appui aux PMEs</li>
                 <li>Études et formations</li>
                 <li>Gouvernance, Management et Leadership</li>
                 <li>Télécommunications, Communication et Évènementiels</li>
             </ul>
-            <p>Date limite de d’inscription: (date à insérer) à 18h00.
-                Remplissez le formulaire cidessous pour soumettre votre dossier
-                Pour plus de détails, consultez <a href="http://monsite.fr/mondossier/pdf.pdf" download="pdf.pdf"> le
+            <p>Date limite de d’inscription: (date à insérer) à 18h00.<br>
+                Remplissez le formulaire ci-dessous pour soumettre votre dossier Pour plus de détails, consultez<a
+                    href="http://monsite.fr/mondossier/pdf.pdf" download="pdf.pdf"> le
                     fichier PDF ci-joint</a>
             </p>
             <form id="recruitmentForm" method="POST" action="">
@@ -181,13 +183,31 @@
                 </select>
 
                 <label for="domaine">Domaine:</label>
-                <input type="text" id="domaine" name="domaine" required>
+                <select id="domaine" name="domaine" required>
+                    <option value="" disabled selected>Sélectionnez un domaine</option>
+                    <option value="Economie">Economie</option>
+                    <option value="Social">Social</option>
+                    <option value="Environement">Environement</option>
+                    <option value="Gouvernance">Gouvernance</option>
+                    <option value="Finances_publiques">Finances publiques</option>
+                </select>
+
 
                 <label for="specialite">Spécialité:</label>
                 <input type="text" id="specialite" name="specialite" required>
 
                 <label for="diplome">Diplôme le plus élevé:</label>
-                <input type="text" id="diplome" name="diplome" required>
+                <select id="diplome" name="diplome" required>
+                    <option value="" disabled selected>Sélectionnez votre diplôme</option>
+                    <option value="BAC">BAC</option>
+                    <option value="LICENCE">LICENCE</option>
+                    <option value="MASTER">MASTER</option>
+                    <option value="MBA">MBA</option>
+                    <option value="DOCTORAT">DOCTORAT</option>
+                    <option value="AUTRES">AUTRES (à préciser)</option>
+                </select>
+                <input type="text" id="autreDiplome" name="autreDiplome" placeholder="Précisez votre diplôme"
+                    style="display: none;">
 
                 <label for="telephone">Numéro de téléphone (WhatsApp):</label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone"
@@ -203,10 +223,16 @@
                 <input type="number" id="missions" name="missions" required min="0">
 
                 <label for="institutions">Expériences avec les institutions internationales:</label>
-                <textarea id="institutions" name="institutions" required></textarea>
+                <select id="institutions" name="institutions" required>
+                    <option value="OUI">OUI</option>
+                    <option value="NON">NON</option>
+                </select>
 
                 <label for="disponibilite">Disponibilité:</label>
-                <input type="text" id="disponibilite" name="disponibilite" required>
+                <select id="disponibilite" name="disponibilite" required>
+                    <option value="OUI">OUI</option>
+                    <option value="NON">NON</option>
+                </select>
 
                 <button type="submit">Envoyer</button>
             </form>
