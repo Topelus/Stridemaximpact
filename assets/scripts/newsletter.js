@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const result = await response.json();
             if (result.success) {
-                alert("Merci de vous être abonné à notre newsletter !");
+                showAlert("success", "Merci de vous être abonné à notre newsletter !");
                 form.reset(); // Réinitialise le formulaire
             } else {
-                alert("Erreur : " + result.message);
+                showAlert("error", "Erreur : " + result.message);
             }
         } catch (error) {
-            console.error("Erreur :", error);
-            alert("Une erreur réseau s'est produite.");
+            // console.error("Erreur :", error);
+            showAlert("error", "Une erreur est survenue. Veuillez réessayer.");
         }
     });
 });
