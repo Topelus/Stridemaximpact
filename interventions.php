@@ -203,7 +203,7 @@
             </div>
         </form>
     </section>
-    <?php include('footer.php'); ?>
+    <?php include('assets/blocs/footer.php'); ?>
     <script>
             $(document).ready(function () {
                 cookieBanner.init();
