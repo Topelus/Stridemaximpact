@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData(form);
 
         try {
-            const response = await fetch("assets/scripts/demande.php", {
+            const baseUrl = `${window.location.origin}/assets/scripts/demande.php`;
+            const response = await fetch(baseUrl, {
                 method: "POST",
                 body: formData,
             });

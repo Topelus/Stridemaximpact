@@ -262,74 +262,14 @@
         </section>
     </div>
     <?php include('assets/blocs/footer.php'); ?>
+    <script src="assets/scripts/alert.js"></script>
     <script>
         $(document).ready(function () {
             cookieBanner.init();
         });
-    </script>
-    <div id="overlay" class="overlay" style="display: none;">
-        <div class="alert_box">
-            <div id="alertMessage" class="alert"></div>
-        </div>
-    </div>
-
-    <style>
-        /* L'overlay qui couvre tout l'écran */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* Couleur semi-transparente */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            /* Au-dessus de tout */
-        }
-
-        /* La boîte d'alerte */
-        .alert_box {
-            background-color: #fff;
-            /* Fond blanc */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-            /* Largeur adaptative */
-        }
-
-        /* Style des messages d'alerte */
-        .alert {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        /* Icônes selon le type */
-        .alert.success {
-            color: #2e7d32;
-            /* Vert */
-        }
-
-        .alert.error {
-            color: #c62828;
-            /* Rouge */
-        }
-
-        .alert.info {
-            color: #1565c0;
-            /* Bleu */
-        }
-    </style>
-
 
 </body>
 <script src="assets/scripts/cookiebanner.script.js"></script>
-<script src="assets/scripts/alert.js"></script>
 <script src="assets/scripts/newsletter.js"></script>
 <script src="assets/scripts/news.js"></script>
 <script src="assets/scripts/demande.js"></script>

@@ -26,7 +26,7 @@
 
 <body>
 
-<?php include('../../assets/blocs/header6.php'); ?>
+    <?php include('../../assets/blocs/header6.php'); ?>
     <div id="bloc_page">
         <section class="recrut_container">
             <h1> Avis de constitution du répertoire des consultants<br>de STRIDE pour l'année 2025</h1>
@@ -42,7 +42,8 @@
             </ul>
             <p>Date limite d’inscription: (date à insérer) à 18h00.<br>
                 Remplissez le formulaire ci-dessous pour soumettre votre dossier. <br>Pour plus de détails, consultez<a
-                    href="Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/Profils Experts_Etudes_ Stride.pdf" target="_blank"> le
+                    href="Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/Profils Experts_Etudes_ Stride.pdf"
+                    target="_blank"> le
                     fichier PDF ci-joint</a>
             </p>
             <form id="recruitmentForm" method="POST" action="">
@@ -122,7 +123,7 @@
 
         </section>
         <section class="contact-CTA">
-            <form action="">
+            <form action="" id="demandeForm">
                 <div>
                     <h2>Une question ? Un projet ? Contactez-nous dès maintenant et laissez-nous vous
                         accompagner
@@ -130,17 +131,19 @@
                         succès !</h2>
                     <h3>Nous sommes à votre écoute pour répondre à vos besoins et vous offrir des solutions
                         adaptées.</h3>
-                    <select name="" id="">
-                        <option value="">Choissisez un domaine d'intervention</option>
-                        <option value="">Dévelopement de PMEs</option>
-                        <option value="">Etudes recherches et formation</option>
-                        <option value="">Gouvernance, management et leadership</option>
-                        <option value="">Télécommunications, communication et évènementiel</option>
+                    <select id="domaine" name="domaine" required>
+                        <option value="">Choisissez un domaine d'intervention</option>
+                        <option value="Dévelopement de PMEs">Dévelopement de PMEs</option>
+                        <option value="Etudes recherches et formation">Etudes recherches et formation</option>
+                        <option value="Gouvernance, management et leadership">Gouvernance, management et leadership
+                        </option>
+                        <option value="Télécommunications, communication et évènementiel">Télécommunications,
+                            communication et évènementiel</option>
                     </select>
                 </div>
                 <div>
-                    <input type="text" id="name" name="user_name" placeholder="Adresse email">
-                    <textarea name="" id="" placeholder="Message"></textarea>
+                    <input type="email" id="email" name="email" placeholder="Adresse email" required>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
                     <input type="submit" value="Envoyer">
                 </div>
             </form>
@@ -154,64 +157,7 @@
             cookieBanner.init();
         });
     </script>
-    <div id="overlay" class="overlay" style="display: none;">
-        <div class="alert_box">
-            <div id="alertMessage" class="alert"></div>
-        </div>
-    </div>
 
-    <style>
-        /* L'overlay qui couvre tout l'écran */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            /* Couleur semi-transparente */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            /* Au-dessus de tout */
-        }
-
-        /* La boîte d'alerte */
-        .alert_box {
-            background-color: #fff;
-            /* Fond blanc */
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-            max-width: 400px;
-            width: 90%;
-            /* Largeur adaptative */
-        }
-
-        /* Style des messages d'alerte */
-        .alert {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        /* Icônes selon le type */
-        .alert.success {
-            color: #2e7d32;
-            /* Vert */
-        }
-
-        .alert.error {
-            color: #c62828;
-            /* Rouge */
-        }
-
-        .alert.info {
-            color: #1565c0;
-            /* Bleu */
-        }
-    </style>
 </body>
 <script src="../../assets/scripts/cookiebanner.script.js"></script>
 <script src="../../assets/scripts/alert.js"></script>
@@ -219,5 +165,6 @@
     src="Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/recruitment.js"></script>
 <script src="../../assets/scripts/newsletter.js"></script>
 <script src="../../assets/scripts/legals.js"></script>
+<script src="../../assets/scripts/demande.js"></script>
 
 </html>

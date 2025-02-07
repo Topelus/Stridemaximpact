@@ -120,6 +120,7 @@
         </style>
     </div>
     <?php include('assets/blocs/footer.php'); ?>
+    <script src="assets/scripts/alert.js"></script>
     
 <script>
     $(document).ready(function() {

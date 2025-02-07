@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("newsletterForm");
 
+    
+    // const baseUr = `${window.location.origin}/Stridemaximpact/assets/scripts/newsletter.php`;
+    // console.log(baseUr);
+
     form.addEventListener("submit", async (event) => {
         event.preventDefault(); // Empêche le rechargement de la page
 
@@ -12,7 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
         formData.append("consent", consent);
 
         try {
-            const response = await fetch("assets/scripts/newsletter.php", {
+            const baseUrl = `${window.location.origin}/assets/scripts/newsletter.php`;
+            const response = await fetch(baseUrl, {
                 method: "POST",
                 body: formData,
             });
