@@ -407,6 +407,9 @@ header {
 .moove_menu .main-menus {
     color: white;
 }
+.moove_menu .main-menus:hover .sous-menus{
+    display: flex;
+}
 
 .active-mainMenu .sous-menus {
     display: flex !important;
@@ -2262,6 +2265,7 @@ footer .copyright {
         border-radius: 2px;
     }
 
+
     .category-btn.active {
         /* background-color: rgb(187, 109, 1);*/
         color: rgb(255, 255, 255) !important;
@@ -2270,12 +2274,20 @@ footer .copyright {
         background-color: rgb(187, 109, 1);
     }
 
+    .blog {
+        padding: 30px 30px !important;
+    }
+    .blog-item {
+        width: 100%;
+    }
+
     /* Fin Blog */
 
 
 
     .contact-CTA form {
         flex-direction: column !important;
+        gap: 0px;
     }
 
     .contact-CTA h2 {
@@ -2283,7 +2295,7 @@ footer .copyright {
     }
 
     .contact-CTA h3 {
-        font-size: calc(8px + 1vw) !important;
+        font-size: calc(8px + 2.5vw) !important;
     }
 
 

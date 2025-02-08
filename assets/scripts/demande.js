@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const formData = new FormData(form);
 
         try {
-            const baseUrl = `${window.location.origin}/assets/scripts/demande.php`;
+            const baseUrl = `${window.location.origin}/Stridemaximpact/assets/scripts/demande.php`;
             const response = await fetch(baseUrl, {
                 method: "POST",
                 body: formData,

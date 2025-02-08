@@ -43,7 +43,7 @@
             </div>
             <div class="interventions">
                 <span class="smalltitle">Domaines d'intervention</span>
-                <div><a href="interventions.html#I1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324.18 273.02"
+                <div><a href="interventions.php#I1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 324.18 273.02"
                             fill="currentColor">
                             <g id="Calque_2" data-name="Calque 2">
                                 <g id="Calque_1-2" data-name="Calque 1">
@@ -74,7 +74,7 @@
                                 </g>
                             </g>
                         </svg> <span>Dévelopement de PMEs</span></div></a>
-                <div><a href="interventions.html#I2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366.84 365.42"
+                <div><a href="interventions.php#I2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 366.84 365.42"
                             fill="currentColor">
                             <g id="Calque_2" data-name="Calque 2">
                                 <g id="Calque_1-2" data-name="Calque 1">
@@ -92,7 +92,7 @@
                                 </g>
                             </g>
                         </svg><span>Etudes, recherches et formations</span></a></div>
-                <div><a href="interventions.html#I3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370.12 370.04"
+                <div><a href="interventions.php#I3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370.12 370.04"
                             fill="currentColor">
                             <g id="Calque_2" data-name="Calque 2">
                                 <g id="Calque_1-2" data-name="Calque 1">
@@ -129,7 +129,7 @@
                                 </g>
                             </g>
                         </svg><span>Gouvernance, management et leadership</span></a></div>
-                <div><a href="interventions.html#I4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.29 385.72"
+                <div><a href="interventions.php#I4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 386.29 385.72"
                             fill="currentColor">
                             <g id="Calque_2" data-name="Calque 2">
                                 <g id="Calque_1-2" data-name="Calque 1">

@@ -4,10 +4,35 @@ const recruitmentForm = document.getElementById("recruitmentForm");
 // Charger le plugin intl-tel-input sur l'input de téléphone
 const telephoneInput = document.getElementById("telephone");
 const iti = window.intlTelInput(telephoneInput, {
+  initialCountry: "auto",
+  geoIpLookup: function (callback) {
+    fetch('https://ipapi.co/json/') // API pour obtenir la localisation via IP
+      .then(response => response.json())
+      .then(data => callback(data.country_code))
+      .catch(() => callback("BJ")); // Valeur par défaut si l'API échoue
+  },
 
   utilsScript:
     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.min.js", // Nécessaire pour les fonctionnalités avancées
 });
+
+
+
+// Optionnel : Ajouter un gestionnaire pour obtenir le numéro formaté
+phoneInput.addEventListener("blur", () => {
+  const isValid = iti.isValidNumber();
+  const formattedNumber = iti.getNumber(); // Numéro formaté avec l'indicatif
+  if (isValid) {
+    console.log("Numéro valide :", formattedNumber);
+  } else {
+    console.log("Numéro invalide !");
+  }
+});
+
+
+
+
+
 
 
 const specialitesParDomaine = {

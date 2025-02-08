@@ -35,7 +35,7 @@
             <p>Nous recherchons des experts qui souhaiteraient collaborer avec nous en 2025 dans les domaines ci-après:
             </p>
             <ul>
-                <li>Appui aux PMEs</li>
+                <li>Appui aux Petites et moyennes entreprises (PMEs)</li>
                 <li>Études et formations</li>
                 <li>Gouvernance, Management et Leadership</li>
                 <li>Télécommunications, Communication et Évènementiels</li>

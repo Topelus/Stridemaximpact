@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         formData.append("consent", consent);
 
         try {
-            const baseUrl = `${window.location.origin}/assets/scripts/newsletter.php`;
+            const baseUrl = `${window.location.origin}/Stridemaximpact/assets/scripts/newsletter.php`;
             const response = await fetch(baseUrl, {
                 method: "POST",
                 body: formData,
