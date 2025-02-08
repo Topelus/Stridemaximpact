@@ -2,7 +2,8 @@
     line-height: 2;
     margin-top: 20px;
 }
-.img-banner{
+
+.img-banner {
     width: 100%;
     height: 500px;
     border-top: #ff9100 5px solid;
@@ -17,6 +18,7 @@
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
+
 .recrut_container h5 {
     text-align: center;
     color: #555;
@@ -37,15 +39,20 @@
 
 /* Formulaire */
 form#recruitmentForm {
+    width: 100%;
     background: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 10px;
     box-sizing: border-box;
-    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+form#recruitmentForm>div {
+    width: 50%;
 }
 
 form#recruitmentForm label {
@@ -54,6 +61,7 @@ form#recruitmentForm label {
     display: block;
     margin-bottom: 8px;
 }
+
 
 form#recruitmentForm input,
 form#recruitmentForm select,
@@ -113,5 +121,13 @@ form#recruitmentForm button:hover {
     form textarea,
     form button {
         font-size: 14px;
+    }
+    form#recruitmentForm {
+        gap: 0px;
+        flex-direction: column;
+    }
+    
+    form#recruitmentForm>div {
+        width: 100%;
     }
 }

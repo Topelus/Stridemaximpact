@@ -40,83 +40,87 @@
                 <li>Gouvernance, Management et Leadership</li>
                 <li>Télécommunications, Communication et Évènementiels</li>
             </ul>
-            <p>Date limite d’inscription: (date à insérer) à 18h00.<br>
-                Remplissez le formulaire ci-dessous pour soumettre votre dossier. <br>Pour plus de détails, consultez<a
+            <p>Date limite d’inscription: 15 mars à 18h00.<br>
+                Remplissez le formulaire ci-dessous pour soumettre votre dossier. <br>Pour plus de détails, consultez <a
                     href="Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/Profils Experts_Etudes_ Stride.pdf"
-                    target="_blank"> le
+                    target="_blank">le
                     fichier PDF ci-joint</a>
             </p>
             <form id="recruitmentForm" method="POST" action="">
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required>
+                <div>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
 
-                <label for="prenoms">Prénoms:</label>
-                <input type="text" id="prenoms" name="prenoms" required>
+                    <label for="prenoms">Prénoms:</label>
+                    <input type="text" id="prenoms" name="prenoms" required>
 
-                <label for="sexe">Sexe:</label>
-                <select id="sexe" name="sexe" required>
-                    <option value="">--Choisissez--</option>
-                    <option value="Masculin">Masculin</option>
-                    <option value="Féminin">Féminin</option>
-                </select>
+                    <label for="sexe">Sexe:</label>
+                    <select id="sexe" name="sexe" required>
+                        <option value="">--Choisissez--</option>
+                        <option value="Masculin">Masculin</option>
+                        <option value="Féminin">Féminin</option>
+                    </select>
 
-                <label for="domaine">Domaine:</label>
-                <select id="domaine" name="domaine" required>
-                    <option value="" disabled selected>Sélectionnez un domaine</option>
-                    <option value="Economie">Economie</option>
-                    <option value="Social">Social</option>
-                    <option value="Environnement">Environement</option>
-                    <option value="Gouvernance">Gouvernance</option>
-                    <option value="Finances_publiques">Finances publiques</option>
-                </select>
+                    <label for="domaine">Domaine:</label>
+                    <select id="domaine" name="domaine" required>
+                        <option value="" disabled selected>Sélectionnez un domaine</option>
+                        <option value="Economie">Economie</option>
+                        <option value="Social">Social</option>
+                        <option value="Environnement">Environement</option>
+                        <option value="Gouvernance">Gouvernance</option>
+                        <option value="Finances_publiques">Finances publiques</option>
+                    </select>
 
 
-                <label for="specialite">Spécialité:</label>
-                <select id="specialites" name="specialite" disabled>
-                    <option value="">--Sélectionnez une spécialité--</option>
-                </select>
+                    <label for="specialite">Spécialité:</label>
+                    <select id="specialites" name="specialite" disabled>
+                        <option value="">--Sélectionnez une spécialité--</option>
+                    </select>
 
-                <label for="diplome">Diplôme le plus élevé:</label>
-                <select id="diplome" name="diplome" required>
-                    <option value="" disabled selected>Sélectionnez votre diplôme</option>
-                    <option value="BAC">BAC</option>
-                    <option value="LICENCE">LICENCE</option>
-                    <option value="MASTER">MASTER</option>
-                    <option value="MBA">MBA</option>
-                    <option value="DOCTORAT">DOCTORAT</option>
-                    <option value="AUTRES">AUTRES (à préciser)</option>
-                </select>
-                <input type="text" id="autreDiplome" name="autreDiplome" placeholder="Précisez votre diplôme"
-                    style="display: none;">
+                    <label for="diplome">Diplôme le plus élevé:</label>
+                    <select id="diplome" name="diplome" required>
+                        <option value="" disabled selected>Sélectionnez votre diplôme</option>
+                        <option value="BAC">BAC</option>
+                        <option value="LICENCE">LICENCE</option>
+                        <option value="MASTER">MASTER</option>
+                        <option value="MBA">MBA</option>
+                        <option value="DOCTORAT">DOCTORAT</option>
+                        <option value="AUTRES">AUTRES (à préciser)</option>
+                    </select>
+                    <input type="text" id="autreDiplome" name="autreDiplome" placeholder="Précisez votre diplôme"
+                        style="display: none;">
 
-                <label for="telephone">Numéro de téléphone (WhatsApp):</label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone"
-                    required>
+                </div>
+                <div>
 
-                <label for="email">Adresse email:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="telephone">Numéro de téléphone (WhatsApp):</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro de téléphone"
+                        required>
 
-                <label for="experience">Nombre d'années d'expérience:</label>
-                <input type="number" id="experience" name="experience" required min="0">
+                    <label for="email">Adresse email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="missions">Nombre de missions déjà réalisées:</label>
-                <input type="number" id="missions" name="missions" required min="0">
+                    <label for="experience">Nombre d'années d'expérience:</label>
+                    <input type="number" id="experience" name="experience" required min="0">
 
-                <label for="institutions">Expériences avec les institutions internationales:</label>
-                <select id="institutions" name="institutions" required>
-                    <option value="">OUI/NON</option>
-                    <option value="OUI">OUI</option>
-                    <option value="NON">NON</option>
-                </select>
+                    <label for="missions">Nombre de missions déjà réalisées:</label>
+                    <input type="number" id="missions" name="missions" required min="0">
 
-                <label for="disponibilite">Disponibilité:</label>
-                <select id="disponibilite" name="disponibilite" required>
-                    <option value="">OUI/NON</option>
-                    <option value="OUI">OUI</option>
-                    <option value="NON">NON</option>
-                </select>
+                    <label for="institutions">Expériences avec les institutions internationales:</label>
+                    <select id="institutions" name="institutions" required>
+                        <option value="">OUI/NON</option>
+                        <option value="OUI">OUI</option>
+                        <option value="NON">NON</option>
+                    </select>
 
-                <button type="submit">Envoyer</button>
+                    <label for="disponibilite">Disponibilité:</label>
+                    <select id="disponibilite" name="disponibilite" required>
+                        <option value="">OUI/NON</option>
+                        <option value="OUI">OUI</option>
+                        <option value="NON">NON</option>
+                    </select>
+                    <button type="submit">Envoyer</button>
+                </div>
             </form>
 
 

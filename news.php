@@ -108,7 +108,6 @@
 
             .blog-item {
                 width: 300px;
-                height: auto;
                 box-sizing: border-box;
                 padding: 20px;
                 background-color: #fff;
@@ -121,7 +120,7 @@
 
             .img_article {
                 width: 100%;
-                height: 300px;
+                height: 250px;
             }
 
             .img_article img {
@@ -143,7 +142,7 @@
             }
 
             .blog-item .descript {
-                height: 200px;
+                height: 250px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -174,7 +173,7 @@
                 <!-- Blog Content -->
                 <div class="blog-content">
                     <!-- Articles -->
-                    <div class="blog-item" data-category="articles">
+                    <!-- <div class="blog-item" data-category="articles">
                         <div class="img_article"></div>
                         <div class="descript">
                             <h3>Les dernières tendances du secteur</h3>
@@ -183,7 +182,7 @@
                             </p>
                             <a href="">En savoir plus</a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="blog-item" data-category="articles">
                         <div class="img_article"></div>
                         <div class="descript">
@@ -217,7 +216,8 @@
                                 src="Blog/recrutements/Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/close-up-hand-with-magnifying-glass-_1_.webp"
                                 alt=""></div>
                         <div class="descript">
-                            <h3>Avis de constitution du répertoire de l’année 2025 des consultants</h3>
+                            <h3>Avis de constitution du répertoire des consultants
+                                de STRIDE pour l'année 2025</h3>
                             <p>Nous recherchons des experts voulant collaborer avec notre entreprise pour ...</p>
                             <a
                                 href="Blog/recrutements/Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com.php">En
@@ -235,8 +235,8 @@
                 </div>
             </div>
         </section>
-        
-    <?php include('assets/blocs/contactCTA.php'); ?>
+
+        <?php include('assets/blocs/contactCTA.php'); ?>
 
     </div>
     <?php include('assets/blocs/footer.php'); ?>
@@ -246,10 +246,10 @@
             cookieBanner.init();
         });
 
-</body>
-<script src="assets/scripts/cookiebanner.script.js"></script>
-<script src="assets/scripts/newsletter.js"></script>
-<script src="assets/scripts/news.js"></script>
-<script src="assets/scripts/demande.js"></script>
+</body >
+            <script src="assets/scripts/cookiebanner.script.js"></script>
+    <script src="assets/scripts/newsletter.js"></script>
+    <script src="assets/scripts/news.js"></script>
+    <script src="assets/scripts/demande.js"></script>
 
 </html>

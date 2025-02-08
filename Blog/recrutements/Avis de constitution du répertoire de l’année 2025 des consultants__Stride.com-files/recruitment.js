@@ -13,13 +13,11 @@ const iti = window.intlTelInput(telephoneInput, {
   },
 
   utilsScript:
-    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.min.js", // Nécessaire pour les fonctionnalités avancées
+    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.min.js" // Nécessaire pour les fonctionnalités avancées
 });
 
-
-
 // Optionnel : Ajouter un gestionnaire pour obtenir le numéro formaté
-phoneInput.addEventListener("blur", () => {
+telephoneInput.addEventListener("blur", () => {
   const isValid = iti.isValidNumber();
   const formattedNumber = iti.getNumber(); // Numéro formaté avec l'indicatif
   if (isValid) {
@@ -28,10 +26,6 @@ phoneInput.addEventListener("blur", () => {
     console.log("Numéro invalide !");
   }
 });
-
-
-
-
 
 
 
@@ -97,9 +91,6 @@ domainesSelect.addEventListener("change", () => {
 
 
 
-
-
-
 // Affichage du champ "Autres" si nécessaire
 document.getElementById("diplome").addEventListener("change", function () {
   const autreDiplomeField = document.getElementById("autreDiplome");
@@ -139,8 +130,8 @@ recruitmentForm.addEventListener("submit", function (e) {
       }
     })
     .catch((error) => {
-      console.error("Erreur :", error);
-      alert(error);
+      // console.error("Erreur :", error);
+      // alert(error);
       showAlert("error", "Une erreur est survenue. Veuillez réessayer.");
     });
 });
