@@ -1,5 +1,5 @@
 
-<header>
+<header><?php define('BASE_URL', ''); ?>
         <div class="parralax-header home" id="parralax-header">
             <div class="backdrop">
                 <div class="banntext" id="banntext">

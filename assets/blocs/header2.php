@@ -1,4 +1,4 @@
-<header>
+<header><?php define('BASE_URL', ''); ?>
         <div class="parralax-header Interventions" id="parralax-header">
             <div class="backdrop">
                 <div class="banntext Int" id="banntext">
@@ -91,36 +91,40 @@
                     </div>
 
                     <div class="moove_menu" id="menu">
-                        <ul>
-                            <li><a href="index.php" class="main-menus">Acceuil</a></li>
-                            <li class="main-menus"><span>A propos <i class="fa fa-angle-down"></i></span>
-                                <ul class="sous-menus">
-                                    <li><a href="about.php#Us">Qui Sommes-nous?</a></li>
-                                    <li><a href="about.php#Valeurs">Nos Valeurs</a></li>
-                                    <li><a href="about.php#References">Nos Références</a></li>
-                                    <li><a href="about.php#Team">Notre Equipe</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-menus"><span style="color: #ff9100; font-weight: bold;">Interventions <i
-                                        class="fa fa-angle-down"></i></span>
-                                <ul class="sous-menus">
-                                    <li><a href="interventions.php#I1">Dévelopement de PMEs</a></li>
-                                    <li><a href="interventions.php#I2">Etudes, recherches et formations</a></li>
-                                    <li><a href="interventions.php#I3">Gouvernance, management et leadership</a></li>
-                                    <li><a href="interventions.php#I4">Télécommunication, communications et
-                                            évènementiel</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-menus"><span>Blog <i class="fa fa-angle-down"></i></span>
-                                <ul class="sous-menus">
-                                    <li><a href="news.php">Articles</a></li>
-                                    <li><a href="news.php">Evènements</a></li>
-                                    <li><a href="news.php">Recrutements</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <a href="#contact">Contact</a>
-                    </div>
+                    <ul>
+                        <li><a href="<?php echo BASE_URL; ?>/" class="main-menus"><span
+                                    >Acceuil</span></a></li>
+                        <li class="main-menus"><span>A propos <i class="fa fa-angle-down"></i></span>
+                            <ul class="sous-menus">
+                                <li><a href="<?php echo BASE_URL; ?>/about.php#Us">Qui Sommes-nous?</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>/about.php#Valeurs">Nos Valeurs</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>/about.php#References">Nos Références</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>/about.php#Team">Notre Equipe</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menus"><span style="color: #ff9100; font-weight: bold;">Interventions <i class="fa fa-angle-down"></i></span>
+                            <ul class="sous-menus">
+                                <li><a href="<?php echo BASE_URL; ?>/interventions.php#I1">Dévelopement de PMEs</a>
+                                </li>
+                                <li><a href="<?php echo BASE_URL; ?>/interventions.php#I2">Etudes, recherches et
+                                        formations</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>/interventions.php#I3">Gouvernance, management et
+                                        leadership</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>/interventions.php#I4">Télécommunication,
+                                        communications et
+                                        évènementiel</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menus"><span>Blog <i class="fa fa-angle-down"></i></span>
+                            <ul class="sous-menus">
+                                <li><a href="<?php echo BASE_URL; ?>/news.php">Articles</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>/news.php">Evènements</a></li>
+                                <li><a href="<?php echo BASE_URL; ?>/news.php">Recrutements</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#contact">Contact</a>
+                </div>
                 </div>
             </div>
         </div>

@@ -35,11 +35,11 @@ openMainMenus.forEach(mainMenu => {
 var backgroundContainer = document.querySelector('.parralax-header.home');
 const banner = document.getElementById('banntext');
 var images = [
-    'url("assets/images/bannpic.webp")',
-    'url("assets/images/stacking-wooden-blocks-is-risk-creating-business-growth-ideas.webp")',
-    'url("assets/images/open-book-with-light-bulb-_1.webp")',
-    'url("assets/images/pexels-padrinan-194094.webp")',
-    'url("assets/images/man-wearing-smart-glasses.webp")'
+    { webp: 'assets/images/bannpic.webp', fallback: 'assets/images/bannpic.jpg' },
+    { webp: 'assets/images/stacking-wooden-blocks-is-risk-creating-business-growth-ideas.webp', fallback: 'assets/images/stacking-wooden-blocks-is-risk-creating-business-growth-ideas.jpg' },
+    { webp: 'assets/images/open-book-with-light-bulb-_1.webp', fallback: 'assets/images/open-book-with-light-bulb-_1.jpg' },
+    { webp: 'assets/images/pexels-padrinan-194094.webp', fallback: 'assets/images/pexels-padrinan-194094.jpg' },
+    { webp: 'assets/images/man-wearing-smart-glasses.webp', fallback: 'assets/images/man-wearing-smart-glasses.jpg' }
 
 ];
 const texts = [
@@ -63,20 +63,34 @@ const texts = [
 var currentIndex = 0;
 var dots = document.querySelectorAll('.banndots span');
 
+function supportsWebP(callback) {
+    const img = new Image();
+    img.onload = () => callback(true);  // Si l'image charge, WebP est pris en charge
+    img.onerror = () => callback(false); // Sinon, WebP n'est pas pris en charge
+    img.src = 'data:image/webp;base64,UklGRhYAAABXRUJQVlA4TAYAAAAvAAAAAAnbEAAQAAAAwAAAnAA/vvUAAA=';
+  }
+  
 function changeBackgroundImage() {
-    // Change the background image
-    backgroundContainer.style.backgroundImage = images[currentIndex];
-    // Update the index, and loop back to the start if necessary
-    banner.innerHTML = texts[currentIndex];
+    supportsWebP((isSupported) => {
+        // Mettre à jour l'URL d'image pour chaque élément dans le tableau en fonction du support WebP
+        const updatedImages = images.map(image => isSupported ? `url("${image.webp}")` : `url("${image.fallback}")`);
 
+        // Mettre à jour l'image de fond pour le conteneur en fonction de l'indice actuel
+        backgroundContainer.style.backgroundImage = updatedImages[currentIndex];
 
+        // Mettre à jour le texte de la bannière
+        banner.innerHTML = texts[currentIndex];
 
-    // Convertir en tableau pour utiliser forEach
-    dots.forEach((dot, indexs) => {
-        dot.classList.toggle("active_dot", indexs === currentIndex);
+        // Gérer les points d'indication (dots)
+        dots.forEach((dot, indexs) => {
+            dot.classList.toggle("active_dot", indexs === currentIndex);
+        });
+
+        // Mettre à jour l'indice actuel et revenir au début si nécessaire
+        currentIndex = (currentIndex + 1) % images.length;
     });
-    currentIndex = (currentIndex + 1) % images.length;
 }
+
 
 
 // Convertir en tableau pour utiliser forEach
