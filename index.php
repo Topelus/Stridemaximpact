@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- custom css links -->
-    <link rel="stylesheet" href="assets/css/style.css?v=3.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=4.0">
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" type="text/css">
     <link rel="shortcut icon" href="assets/images/favicon_io/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

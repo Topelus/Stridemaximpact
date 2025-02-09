@@ -63,32 +63,31 @@ const texts = [
 var currentIndex = 0;
 var dots = document.querySelectorAll('.banndots span');
 
-function supportsWebP(callback) {
-    const img = new Image();
-    img.onload = () => callback(true);  // Si l'image charge, WebP est pris en charge
-    img.onerror = () => callback(false); // Sinon, WebP n'est pas pris en charge
-    img.src = 'data:image/webp;base64,UklGRhYAAABXRUJQVlA4TAYAAAAvAAAAAAnbEAAQAAAAwAAAnAA/vvUAAA=';
-  }
-  
+function isSafari() {
+    const ua = navigator.userAgent.toLowerCase();
+    return ua.includes("safari") && !ua.includes("chrome"); // Safari est présent, mais pas Chrome
+}
+
 function changeBackgroundImage() {
-    supportsWebP((isSupported) => {
-        // Mettre à jour l'URL d'image pour chaque élément dans le tableau en fonction du support WebP
-        const updatedImages = images.map(image => isSupported ? `url("${image.webp}")` : `url("${image.fallback}")`);
+    // Applique l'image en fonction du navigateur
+    const updatedImages = images.map(image =>
+        isSafari() ? `url("${image.fallback}")` : `url("${image.webp}")`
+    );
+    
+    console.log(isSafari());
+    // Mettre à jour l'image de fond pour le conteneur en fonction de l'indice actuel
+    backgroundContainer.style.backgroundImage = updatedImages[currentIndex];
 
-        // Mettre à jour l'image de fond pour le conteneur en fonction de l'indice actuel
-        backgroundContainer.style.backgroundImage = updatedImages[currentIndex];
+    // Mettre à jour le texte de la bannière
+    banner.innerHTML = texts[currentIndex];
 
-        // Mettre à jour le texte de la bannière
-        banner.innerHTML = texts[currentIndex];
-
-        // Gérer les points d'indication (dots)
-        dots.forEach((dot, indexs) => {
-            dot.classList.toggle("active_dot", indexs === currentIndex);
-        });
-
-        // Mettre à jour l'indice actuel et revenir au début si nécessaire
-        currentIndex = (currentIndex + 1) % images.length;
+    // Gérer les points d'indication (dots)
+    dots.forEach((dot, indexs) => {
+        dot.classList.toggle("active_dot", indexs === currentIndex);
     });
+
+    // Mettre à jour l'indice actuel et revenir au début si nécessaire
+    currentIndex = (currentIndex + 1) % images.length;
 }
 
 
