@@ -40,7 +40,7 @@
                 <li>Gouvernance, Management et Leadership</li>
                 <li>Télécommunications, Communication et Évènementiels</li>
             </ul>
-            <p>Date limite d’inscription: 15 mars à 18h00.<br>
+            <p>Date limite d’inscription: 31 mars 2025 à 18h00.<br>
                 Remplissez le formulaire ci-dessous pour soumettre votre dossier. <br>Pour plus de détails, consultez <a
                     href="Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com-files/Profils Experts_Etudes_ Stride.pdf"
                     target="_blank">le
