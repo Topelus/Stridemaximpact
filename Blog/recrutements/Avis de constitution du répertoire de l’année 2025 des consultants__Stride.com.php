@@ -29,7 +29,7 @@
     <?php include('../../assets/blocs/header6.php'); ?>
     <div id="bloc_page">
         <section class="recrut_container">
-            <h1> Avis de constitution du répertoire des consultants<br>de STRIDE pour l'année 2025</h1>
+            <h1> Avis de constitution du répertoire des consultants<br>de STRIDE</h1>
             <h5>-Avis de recrutement-</h5>
             <div class="img-banner"></div>
             <p>Nous recherchons des experts qui souhaiteraient collaborer avec nous en 2025 dans les domaines ci-après:

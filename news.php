@@ -217,7 +217,7 @@
                                 alt=""></div>
                         <div class="descript">
                             <h3>Avis de constitution du répertoire des consultants
-                                de STRIDE pour l'année 2025</h3>
+                                de STRIDE</h3>
                             <p>Nous recherchons des experts voulant collaborer avec notre entreprise pour ...</p>
                             <a
                                 href="Blog/recrutements/Avis de constitution du répertoire de l’année 2025 des consultants__Stride.com.php">En
